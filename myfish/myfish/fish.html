@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <style type="text/css">
+          body{
+              background-image:url('Image/bg.jpg') ;
+              background-repeat: no-repeat;
+              background-size:cover;
+              cursor:pointer;
+          } 
+          #fishcount{
+              margin-top:30px;
+              margin-bottom:30px;
+              font-size:17px;
+          }
+          .all_bg{
+              width:800px;
+              height:600px;
+              margin:0px auto;
+              /*設定為水平置中*/
+          }
+          #allcanvas{
+              position:relative;
+              width:800px;
+              height:600px;
+              margin:0px;
+          }
+          #canvas1{
+              position:absolute;
+              bottom:0;
+              left:0;
+              border-radius: 6px;
+              z-index:1;
+          }
+          #canvas2{
+              position:absolute;
+              bottom:0;
+              left:0;
+              border-radius: 6px;
+              z-index:0; 
+              /*設定canvas,職越小在後面,越大在前面*/
+          }
+         
+          #start {
+              background: url('Image/play.png'); 
+              position:absolute;
+              /*left:580px;*/
+              margin-left:340px;
+              top:450px;
+              width:124px;
+              height:124px;
+              border-radius: 300px;
+              Z-index:2;
+          }
+          .modal-body{
+              background-color:	#97CBFF;
+          }
+          
+   
+        </style>
+    </head>
+    <body>
+        <div class = "all_bg">
+            <div id = "fishcount" class="form-horizontal">
+                <div class = "form-group">
+                    <form>
+                    <div class=" col-sm-2">
+                        
+                        
+                        <button type="button" class="btn btn-warning btn-middle" data-toggle="modal" data-target="#myModal">遊戲說明</button>
+                    
+                        <div class="modal " id="myModal" role="dialog">
+                            <div class="modal-dialog">
+    
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h3 class="modal-title">遊戲說明</h3>
+                                </div>
+                                <div class="modal-body">
+                                <ul>    
+                                  <li><h4>有一艘&nbsp;<img src="Image/Ship1.png" width="35" height="35"> &nbsp;(海盜船)沉船了而且還掉了很多的寶物,但是那個區域有很多的&nbsp;<img src="Image/JellyFish/Jellyfish-0.png" width="20" height="25"> &nbsp;(水母) 
+                                  與&nbsp;<img src="Image/Shark/Shark-0.png" width="45" height="35"> &nbsp;(鯊魚),
+                                  你該怎麼幫助這隻&nbsp;<img src="Image/fish/fish1.png" width="45" height="40"> &nbsp;(魟魚)
+                                  拿到寶物呢？</h4></li>
+                                  <li><h4>1.設定完水母與鯊魚數量後點下&nbsp;<img src="Image/play.png" height="25" width="25"> &nbsp;(Start按鈕)開始遊戲</h4></li>
+                                  <li><h4>2.如果拿到&nbsp;<img src="Image/coin/coin-5.png" height="25" width="25"> &nbsp;(金幣)分數會加10分</h4></li>
+                                  <li><h4>3.如果拿到<img src="Image/money/money-4.png" height="40" width="40">(金幣袋)分數會加30分</h4></li>
+                                  <li><h4>4.如果拿到&nbsp;<img src="Image/diamond/diamond-0.png" height="25" width="25"> &nbsp;(鑽石)分數會加50分</h4></li>
+                                  <li><h4>5.請注意不要碰到水母與鯊魚,如果碰到則會結束遊戲&nbsp;<img src="Image/gameover.png" height="25" width="100"> &nbsp;</h4></li>
+                                </ul>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                    
+                    
+                    </div>    
+                    <label class="control-label col-sm-3">
+                        <span class="glyphicon glyphicon-cog"></span> 
+                        請輸入水母數量：
+                    </label>
+                    <div class=" col-sm-2">
+                        <input id="A"  class="form-control" type="text" maxlength="2" value="20">
+                    </div>
+                    <label class="control-label col-sm-3">
+                         <span class="glyphicon glyphicon-cog"></span> 
+                        請輸入鯊魚數量：
+                    </label>
+                    <div class=" col-sm-2">
+                        <input id="B"  class="form-control" type="text" maxlength="1"value="2">
+                    </div>
+                    
+                    </form>
+                </div>
+            </div>
+            <input type="button" id="start"/>
+            <div id = "allcanvas">
+               
+            </div>
+        </div>
+        <div id="debug"></div>
+        <script type="text/javascript" src="main.js"></script> 
+    </body>
+</html>
