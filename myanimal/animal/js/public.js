@@ -72,15 +72,6 @@ $(function () {
 	
 
 
-	$('.menu').css ({
-		   height: $(window).height ()
-	})
-	$('.primary-nav').css ({
-		   height: $(window).height ()
-	})
-
-
-
 	// page5 move container
 	$(".circle1").click(function() {
 		$("#containers1").css({"left":"0%"})
