@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>台鐵神票手</title>
+	<link rel="shortcut icon" href="image/logo.png">	
+	<link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/order-3.css">
+	<link rel="stylesheet" href="js/camera/css/camera.css">
+	<script src="js/bootstrap/js/jquery.js"></script>
+	<script src="js/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/camera/scripts/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/camera/scripts/camera.min.js"></script>
+	<script src="js/animate.js"></script>
+
+
+
+</head>
+<body>
+	<div id="topbackground">
+
+
+	<!-- 上方圖片 -->
+		<div class="container">
+			<div id="camera_wrap">
+		        <div data-src="image/banner-train0.jpg">
+		        	<div class="camera_caption fadeFromBottom">
+						區間車
+   					 </div>
+		        </div>
+		         <div data-src="image/banner-train1.jpg">
+		        	<div class="camera_caption fadeFromBottom">
+						普悠瑪號
+   					 </div>
+		        </div>
+		         <div data-src="image/banner-train2.jpg">
+		        	<div class="camera_caption fadeFromBottom">
+						自強號
+   					 </div>
+		        </div>
+		         <div data-src="image/banner-train3.jpg">
+		        	<div class="camera_caption fadeFromBottom">
+						太魯閣號
+   					 </div>
+		        </div>
+		         <div data-src="image/banner-train4.jpg">
+		        	<div class="camera_caption fadeFromBottom">
+						莒光號
+   					 </div>
+		        </div>
+   			 </div>
+		</div>
+
+
+	<!-- 導覽列 -->
+		<div class="container">
+			<nav class="navbar navbar-default navbar-static-top">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			      <a class="navbar-brand" href="index.html"> 
+			      	<img id="logo" src="image/logo.png">
+			      	<span>台鐵神票手</span>
+			      </a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav">
+			        <li><a href="order-1.html">快速訂票</a></li>
+			        <li><a href="search-1.html">查詢系統</a></li>
+			        <li><a href="refund-1.html">取消訂票</a></li>
+			        <li><a href="#">Page 1</a></li>
+			        <li><a href="#">Page 2</a></li>
+			        <li><a href="#">Page 3</a></li>
+			        <li><a href="#">Page 4</a></li>
+			        
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</div>
+	<!-- 訂票欄 -->
+	<div class="container">
+		<label class="control-label ">您所在的訂位步驟：</label>
+		<div class="progress">
+			<div class="progress-bar" role="progressbar"
+			aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:35%">
+	   		<label class="control-label ">1. 選擇車次 </label>
+	  		</div>
+	  		<div class="progress-bar progress-bar-info" role="progressbar"
+			aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:35%">
+	   		<label class="control-label ">2. 取票資訊  </label>
+	  		</div>
+	  		<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+			aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+	   		<label class="control-label ">3. 完成訂位  </label>
+	  		</div>
+		</div>
+	</div>
+	<!-- 完成訂位 -->
+	<div class="container">
+		<fieldset class="order">
+			<legend><label class="control-label ">完成訂位</label></legend>
+
+
+			<label class="control-label "><h2>恭喜您已完成訂位!!!</h2></label>
+			
+			<div class="overlay">      
+				<img src="image/ticket.jpg">
+				<div><br>
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017.08.08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;台灣鐵路局<br>
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;強&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2557&nbsp;次<br>
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;台&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rarr;台&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北<br>
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15:30開&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17:40到<br>
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;車&nbsp;&nbsp;&nbsp;15&nbsp;&nbsp;&nbsp;號&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cars.&nbsp;5&nbsp;&nbsp;Seat.&nbsp;&nbsp;15<br>
+					 <br>
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NT&nbsp;$&nbsp;300元<br>
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;087465-0284-389&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;限當日當次車有效
+
+				</div>
+				
+				
+			</div>
+
+			<div class="submit">
+				<a href="index.html"><button type="button" class="btn btn-success btn-lg">
+					返回首頁
+				</button></a>
+			</div>
+		</fieldset>
+	</div>
+	
+	
+	<!-- pagefooter -->
+
+	<div class="container">
+		<footer>
+			<div class="up">
+		 		<p>地址：408台中市南屯區公益路二段51號</p>
+		 		<p>聯絡電話：0910-959-515</p>
+		 		<p>組員:</p>
+		 		<p class="name">張仲威</p>
+		 		<p class="name">李誠祐</p>
+		 		<p class="name">Matt Wu</p>
+		 	</div>
+		 	<div class="down">
+				<p>*本網站若有不慎引用您的圖文資料，侵犯到您的著作權，敬請告知將立即刪除，謝謝！*</p>
+			</div>
+  		</footer>
+	</div>
+	<img id="fbackground" src="image/footer.png">
+
+
+
+	
+</div>
+</body>
+</html>

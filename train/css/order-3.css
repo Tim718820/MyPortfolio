@@ -1,0 +1,224 @@
+* {
+    vertical-align: top;
+    box-sizing:border-box;
+}
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    font-size: medium;
+    font-family: Helvetica,Arial,sans-serif,"微軟正黑體", "Microsoft JhengHei";    
+ }
+
+ #topbackground{
+	background: -webkit-linear-gradient(#DAF9BA,#FFFFFF);
+	background: -o-linear-gradient(#DAF9BA,#FFFFFF);
+	background: -moz-linear-gradient(#DAF9BA,#FFFFFF);
+	background: linear-gradient(#DAF9BA,#FFFFFF);
+}
+
+/* 導覽列 */
+.navbar-default{
+	box-shadow:2px 2px 2px rgba(30%,30%,40%,0.6),4px 4px 6px rgba(30%,30%,40%,0.4),4px 4px 12px rgba(30%,30%,40%,0.4);
+	border-radius: 5px;
+	
+}
+#logo{
+	width: 25px;
+	height: 25px;
+	margin-top: -5px;
+	display: inline-block;
+}
+.navbar-brand{
+	font-weight: bold;
+
+}
+.navbar-nav li a{
+	padding: 15px 20px;
+}
+
+.navbar-nav li a::before{
+	content: '';
+	position: absolute;
+    left: 0;
+	top: 7px;
+	display: inline-block;
+	width: 1px;
+	height: calc(100% - 7px *  2);
+	background-color:rgba( 225, 225, 225, 1.00);
+	
+}
+/* 訂票完成 */
+.order{
+	background-color: rgba( 247, 247, 247, 1.00);
+	border: 5px solid rgba( 86, 172, 98, 1.0);
+	border-radius: 10px;
+	padding: 50px 150px;
+	margin-bottom: 150px;
+	text-align: center;
+	box-shadow:2px 2px 2px rgba(30%,30%,40%,0.6),4px 4px 6px rgba(30%,30%,40%,0.4),4px 4px 12px rgba(30%,30%,40%,0.4);
+}
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+	.order{
+		padding: 100px 100px;
+
+	}	
+}
+@media screen and (min-width: 0px) and (max-width: 800px) {
+	.order{
+		padding: 50px 50px;
+
+	}	
+}
+@media screen and (min-width: 330px) and (max-width: 420px) {
+	.order{
+		padding: 10px 10px;
+
+	}	
+}
+@media screen and (min-width: 0px) and (max-width: 330px) {
+	.order{
+		padding: 5px 5px;
+
+	}	
+}
+legend {
+    width:auto;
+    padding:0 10px; 
+    border-bottom:none;
+}
+
+.order label h2{
+	margin-top: 0;
+	font-weight: bold;
+	color: rgba(255, 127, 80,1.0);
+
+}
+
+
+.overlay {  
+	margin:30px 0;   
+	position: relative;    
+	width: 100%;    
+	z-index: 1;  
+}  
+.overlay img {
+	width: 100%;
+	box-shadow:2px 2px 2px rgba(30%,30%,40%,0.6),4px 4px 6px rgba(30%,30%,40%,0.4),4px 4px 12px rgba(30%,30%,40%,0.4);
+
+}
+    
+.overlay div{   
+	display: block; 
+	position: absolute; 
+	text-align: left;   
+	z-index: 1000;    
+	height: 100%;    
+	width: 100%;    
+	top: 0;        
+	font-weight: 700;    
+	color: #000; 
+	 
+	font-size: 10px; 
+	font-size: 2.0vw;  
+
+}
+@media screen and (min-width: 1500px) and (max-width: 1650px) {
+	.overlay div{
+		font-size: 2.3vw;  
+
+	}	
+}
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+	.overlay div{
+		font-size: 3.0vw;  
+
+	}	
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+	.overlay div{
+		font-size: 3.3vw;  
+
+	}	
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+	.overlay div{
+		font-size: 3.0vw;  
+
+	}	
+}@media screen and (min-width: 580px) and (max-width: 800px) {
+	.overlay div{
+		font-size: 3.5vw;  
+
+	}	
+}
+@media screen and (min-width: 420px) and (max-width: 580px) {
+	.overlay div{
+		font-size: 3.0vw;  
+
+	}	
+}
+@media screen and (min-width: 0px) and (max-width: 420px) {
+	.overlay div{
+		font-size: 3.5vw;  
+
+	}	
+}
+
+
+/* pagefooter */
+footer{
+	margin-bottom: -180px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1550px) {
+   footer{
+		margin-bottom: -150px;
+	}
+}
+@media screen and (min-width: 1020px) and (max-width: 1200px) {
+   footer{
+		margin-bottom: -130px;
+	}
+}
+@media screen and (min-width: 700px) and (max-width: 1020px) {
+   footer{
+		margin-bottom: -110px;
+	}
+}
+@media screen and (min-width: 566px) and (max-width: 700px) {
+   footer{
+		margin-bottom: -90px;
+	}
+}
+@media screen and (min-width: 447px) and (max-width: 566px) {
+   footer{
+		margin-bottom: -70px;
+	}
+}
+@media screen and (min-width: 0px) and (max-width: 447px) {
+   footer{
+		margin-bottom: -50px;
+	}
+}
+footer .up{
+	border-radius: 10px 10px 0 0;
+	padding: 30px 50px;
+	color: white;
+	background-color:rgba(30, 30, 30, 1.00);
+	margin-bottom: 0px ;
+}
+footer .name{
+	text-indent: 4em;
+} 
+footer .down{
+	background-color:rgba(18, 18, 18, 1.00);
+	padding: 30px 50px; 
+	text-align: center;
+	color: white;
+	border-radius: 0 0 10px 10px;
+}
+
+#fbackground{
+	width: 100%;
+	height: 100%;
+}
