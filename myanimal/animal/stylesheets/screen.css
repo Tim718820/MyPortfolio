@@ -1709,7 +1709,19 @@ div.primary-nav .contact span {
   padding: 50px;
   padding-bottom: 30px;
 }
-/* line 1436, ../sass/screen.scss */
+@media screen and (max-width: 466px) and (min-width: 366px) {
+  /* line 1431, ../sass/screen.scss */
+  #footer {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 365px) and (min-width: 0) {
+  /* line 1431, ../sass/screen.scss */
+  #footer {
+    padding: 0px;
+  }
+}
+/* line 1444, ../sass/screen.scss */
 #footer .container {
   width: 100%;
   padding: 10px;
@@ -1722,7 +1734,7 @@ div.primary-nav .contact span {
   line-height: 0;
   clear: both;
 }
-/* line 1441, ../sass/screen.scss */
+/* line 1449, ../sass/screen.scss */
 #footer .container > * {
   display: inline-block;
   float: left;
@@ -1731,36 +1743,36 @@ div.primary-nav .contact span {
   font-size: 13px;
   font-weight: 900;
 }
-/* line 1449, ../sass/screen.scss */
+/* line 1457, ../sass/screen.scss */
 #footer .container .left {
   text-align: left;
   width: 60%;
 }
 @media screen and (max-width: 1237px) and (min-width: 1200px) {
-  /* line 1449, ../sass/screen.scss */
+  /* line 1457, ../sass/screen.scss */
   #footer .container .left {
     width: 100%;
     text-align: center;
   }
 }
 @media screen and (max-width: 1009px) and (min-width: 0) {
-  /* line 1449, ../sass/screen.scss */
+  /* line 1457, ../sass/screen.scss */
   #footer .container .left {
     width: 100%;
     text-align: center;
   }
 }
-/* line 1460, ../sass/screen.scss */
+/* line 1468, ../sass/screen.scss */
 #footer .container .left span {
   line-height: 30px;
 }
-/* line 1464, ../sass/screen.scss */
+/* line 1472, ../sass/screen.scss */
 #footer .container .right {
   text-align: right;
   width: 40%;
 }
 @media screen and (max-width: 1237px) and (min-width: 1200px) {
-  /* line 1464, ../sass/screen.scss */
+  /* line 1472, ../sass/screen.scss */
   #footer .container .right {
     width: 100%;
     margin-top: 16px;
@@ -1768,19 +1780,25 @@ div.primary-nav .contact span {
   }
 }
 @media screen and (max-width: 1009px) and (min-width: 0) {
-  /* line 1464, ../sass/screen.scss */
+  /* line 1472, ../sass/screen.scss */
   #footer .container .right {
     width: 100%;
     margin-top: 16px;
     text-align: center;
   }
 }
-/* line 1478, ../sass/screen.scss */
+/* line 1486, ../sass/screen.scss */
 #footer .container .right .footershare span {
   line-height: 30px;
   margin-right: 30px;
 }
-/* line 1482, ../sass/screen.scss */
+@media screen and (max-width: 466px) and (min-width: 0) {
+  /* line 1486, ../sass/screen.scss */
+  #footer .container .right .footershare span {
+    margin-right: 0px;
+  }
+}
+/* line 1494, ../sass/screen.scss */
 #footer .container .right .footershare div {
   margin-left: 10px;
   display: inline-block;
@@ -1796,11 +1814,11 @@ div.primary-nav .contact span {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-/* line 1492, ../sass/screen.scss */
+/* line 1504, ../sass/screen.scss */
 #footer .container .right .footershare div:hover {
   background-color: #29B572;
 }
-/* line 1496, ../sass/screen.scss */
+/* line 1508, ../sass/screen.scss */
 #footer .container .right .footershare div a {
   color: #FFF;
   font-size: 13px;
