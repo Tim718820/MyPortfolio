@@ -6,13 +6,13 @@
 	<title>台鐵神票手</title>
 	<link rel="shortcut icon" href="image/logo.png" />	
 	<link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/search-1.css">
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="js/bootstrap/css/bootstrap-select.min.css">
 	<link rel="stylesheet" href="js/camera/css/camera.css">
-	<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/themes/redmond/jquery-ui.css" rel="stylesheet">
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/themes/redmond/jquery-ui.css" rel="stylesheet">
 	<script src="js/bootstrap/js/jquery.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 	<script src="js/datepicker.js"></script>
 	<script src="js/bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/bootstrap/js/bootstrap-select.min.js"></script>
@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<div id="topbackground">
+<div id="topbackgroundSh1">
 	<!-- 上方圖片 -->
 		<div class="container">
 			<div id="camera_wrap">
@@ -87,148 +87,152 @@
 		</div>
 
 	<!-- 查票 -->
-	<div class="container">
-		<h2>查詢系統</h2>
-		<div class="searchbackground">
-			<ul class="trainline">
-				
-				<li class="work">
-					<input class='radio' id='step1' name="steps" type='radio'>
-					<div class="relative">
-						<label for="step1"><span class="glyphicon glyphicon-circle-arrow-right"></span>起程站</label>	
-						<span class='step'>STEP 1</span>
-		      			<span class='circle'></span>
-	      			</div>
-	      			<div class='content'>
-		      			<div class="row">
-		      				<div class="col-sm-6">
-						        <p>區域:</p>
-						        <select class="selectpicker" data-style="btn-info">
-								  <option>請選擇</option>
-								  <option>004-台東</option>
-								  <option>008-鹿野</option>
-								  <option>009-瑞源</option>
-								  <option>012-關山</option>
-								  <option>015-池上</option>
-								</select>
+	<div id="search-1">
+		<div class="container">
+			<h2>查詢系統</h2>
+			<div class="searchbackground">
+				<ul class="trainline">
+					
+					<li class="work">
+						<input class='radio' id='step1' name="steps" type='radio'>
+						<div class="relative">
+							<label for="step1"><span class="glyphicon glyphicon-circle-arrow-right"></span>起程站</label>	
+							<span class='step'>STEP 1</span>
+			      			<span class='circle'></span>
+		      			</div>
+		      			<div class='content'>
+			      			<div class="row">
+			      				<div class="col-sm-6">
+							        <p>區域:</p>
+							        <select class="selectpicker" data-style="btn-info">
+									  <option>請選擇</option>
+									  <option>004-台東</option>
+									  <option>008-鹿野</option>
+									  <option>009-瑞源</option>
+									  <option>012-關山</option>
+									  <option>015-池上</option>
+									</select>
+								</div>
+								<div class="col-sm-6">
+							        <p>車站:</p>
+							        <select class="selectpicker" data-style="btn-primary">
+									  <option>請選擇</option>
+									  <option>004-台東</option>
+									  <option>008-鹿野</option>
+									  <option>009-瑞源</option>
+									  <option>012-關山</option>
+									  <option>015-池上</option>
+									</select>
+								</div>
+								<button type="button" id="selectbtn1" class="btn btn-warning">下一步</button>
+								
 							</div>
-							<div class="col-sm-6">
-						        <p>車站:</p>
-						        <select class="selectpicker" data-style="btn-primary">
-								  <option>請選擇</option>
-								  <option>004-台東</option>
-								  <option>008-鹿野</option>
-								  <option>009-瑞源</option>
-								  <option>012-關山</option>
-								  <option>015-池上</option>
-								</select>
+		    			</div>
+					</li>
+
+					<li class="work">
+						<input class='radio' id='step2' name="steps" type='radio'>
+						<div class="relative">
+							<label for="step2"><span class="glyphicon glyphicon-circle-arrow-right"></span>到達站</label>	
+							<span class='step'>STEP 2</span>
+			      			<span class='circle'></span>
+		      			</div>
+		      			<div class='content'>
+			      			<div class="row">
+			      				<div class="col-sm-6">
+							        <p>區域:</p>
+							        <select class="selectpicker" data-style="btn-info">
+									  <option>請選擇</option>
+									  <option>004-台東</option>
+									  <option>008-鹿野</option>
+									  <option>009-瑞源</option>
+									  <option>012-關山</option>
+									  <option>015-池上</option>
+									</select>
+								</div>
+								<div class="col-sm-6">
+							        <p>車站:</p>
+							        <select class="selectpicker" data-style="btn-primary">
+									  <option>請選擇</option>
+									  <option>004-台東</option>
+									  <option>008-鹿野</option>
+									  <option>009-瑞源</option>
+									  <option>012-關山</option>
+									  <option>015-池上</option>
+									</select>
+								</div>
+								<button type="button" id="selectbtn2" class="btn btn-warning">下一步</button>
+								<button type="button" id="selectbtn3" class="btn btn-warning">上一步</button>
 							</div>
-							<button type="button" id="selectbtn1" class="btn btn-warning">下一步</button>
-							
-						</div>
-	    			</div>
-				</li>
+		    			</div>
+					</li>
 
-				<li class="work">
-					<input class='radio' id='step2' name="steps" type='radio'>
-					<div class="relative">
-						<label for="step2"><span class="glyphicon glyphicon-circle-arrow-right"></span>到達站</label>	
-						<span class='step'>STEP 2</span>
-		      			<span class='circle'></span>
-	      			</div>
-	      			<div class='content'>
-		      			<div class="row">
-		      				<div class="col-sm-6">
-						        <p>區域:</p>
-						        <select class="selectpicker" data-style="btn-info">
-								  <option>請選擇</option>
-								  <option>004-台東</option>
-								  <option>008-鹿野</option>
-								  <option>009-瑞源</option>
-								  <option>012-關山</option>
-								  <option>015-池上</option>
-								</select>
-							</div>
-							<div class="col-sm-6">
-						        <p>車站:</p>
-						        <select class="selectpicker" data-style="btn-primary">
-								  <option>請選擇</option>
-								  <option>004-台東</option>
-								  <option>008-鹿野</option>
-								  <option>009-瑞源</option>
-								  <option>012-關山</option>
-								  <option>015-池上</option>
-								</select>
-							</div>
-							<button type="button" id="selectbtn2" class="btn btn-warning">下一步</button>
-							<button type="button" id="selectbtn3" class="btn btn-warning">上一步</button>
-						</div>
-	    			</div>
-				</li>
+					<li class="work">
+						<input class='radio' id='step3' name="steps" type='radio'>
+						<div class="relative">
+							<label for="step3"><span class="glyphicon glyphicon-bed"></span>車種</label>	
+							<span class='step'>STEP 3</span>
+			      			<span class='circle'></span>
+		      			</div>
+		      			<div class='content'>
+			      			<div class="row">
+				      			<div class="col-md-8">
+							        <label class="radio-inline"><input type="radio" name="optradio">所有車種</label>
+									<label class="radio-inline"><input type="radio" name="optradio">對號列車</label>
+									<label class="radio-inline"><input type="radio" name="optradio">非對號列車</label>	
+								</div>
+								<div class="col-md-4">
+									<button type="button" id="selectbtn4" class="btn btn-warning">下一步</button>
+									<button type="button" id="selectbtn5" class="btn btn-warning">上一步</button>  
+								</div>
+							</div>     
+		    			</div>
+					</li>
 
-				<li class="work">
-					<input class='radio' id='step3' name="steps" type='radio'>
-					<div class="relative">
-						<label for="step3"><span class="glyphicon glyphicon-bed"></span>車種</label>	
-						<span class='step'>STEP 3</span>
-		      			<span class='circle'></span>
-	      			</div>
-	      			<div class='content'>
-				        <label class="radio-inline"><input type="radio" name="optradio">所有車種</label>
-						<label class="radio-inline"><input type="radio" name="optradio">對號列車</label>
-						<label class="radio-inline"><input type="radio" name="optradio">非對號列車</label>	
-						<button type="button" id="selectbtn4" class="btn btn-warning">下一步</button>
-						<button type="button" id="selectbtn5" class="btn btn-warning">上一步</button>       
-	    			</div>
-				</li>
+					<li class="work">
+						<input class='radio' id='step4' name="steps" type='radio'>
+						<div class="relative">
+							<label for="step4"><span class="glyphicon glyphicon-calendar"></span>日期與時間</label>	
+							<span class='step'>STEP 4</span>
+			      			<span class='circle'></span>
+		      			</div>
+		      			<div class='content'>
+		      				<div class="row">
+			      				<div class="col-sm-6">
+			      					<p>日期:</p>
+					        		<input id="datepicker" class="form-control" type="text"></input>  
+					        	</div>
+								<div class="col-sm-6">
+									<p id="other">時間:</p><br>
+									<select class="select">
+									  <option>請選擇</option>
+									  <option>00:00</option>
+									  <option>01:00</option>
+									  <option>02:00</option>
+									  <option>03:00</option>
+									  <option>04:00</option>
+									  <option>05:00</option>
+									</select>
+									<span id="and">至</span>
+									<select class="select">
+									  <option>請選擇</option>
+									  <option>00:00</option>
+									  <option>01:00</option>
+									  <option>02:00</option>
+									  <option>03:00</option>
+									  <option>04:00</option>
+									  <option>05:00</option>
+									</select>
+									<a href="search-2.html"><button type="button" id="competebtn" class="btn btn-success">查詢</button></a>
+								</div>
+					        </div>     
+		    			</div>
+					</li>
 
-				<li class="work">
-					<input class='radio' id='step4' name="steps" type='radio'>
-					<div class="relative">
-						<label for="step4"><span class="glyphicon glyphicon-calendar"></span>日期與時間</label>	
-						<span class='step'>STEP 4</span>
-		      			<span class='circle'></span>
-	      			</div>
-	      			<div class='content'>
-	      				<div class="row">
-		      				<div class="col-sm-6">
-		      					<p>日期:</p>
-				        		<input id="datepicker" class="form-control" type="text"></input>  
-				        	</div>
-							<div class="col-sm-6">
-								<p>時間:</p><br>
-								<select class="select">
-								  <option>請選擇</option>
-								  <option>00:00</option>
-								  <option>01:00</option>
-								  <option>02:00</option>
-								  <option>03:00</option>
-								  <option>04:00</option>
-								  <option>05:00</option>
-								</select>
-								<span id="and">至</span>
-								<select class="select">
-								  <option>請選擇</option>
-								  <option>00:00</option>
-								  <option>01:00</option>
-								  <option>02:00</option>
-								  <option>03:00</option>
-								  <option>04:00</option>
-								  <option>05:00</option>
-								</select>
-								<a href="search-2.html"><button type="button" id="competebtn" class="btn btn-success">查詢</button></a>
-							</div>
-				        </div>     
-	    			</div>
-				</li>
-
-
-
-
-			</ul>
+				</ul>
+			</div>
 		</div>
 	</div>
-
 
 <!-- pagefooter -->
 

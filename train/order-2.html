@@ -6,7 +6,7 @@
 	<title>台鐵神票手</title>
 	<link rel="shortcut icon" href="image/logo.png">	
 	<link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/order-2.css">
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="js/camera/css/camera.css">
 	<script src="js/bootstrap/js/jquery.js"></script>
 	<script src="js/bootstrap/js/bootstrap.min.js"></script>
@@ -19,7 +19,7 @@
 
 </head>
 <body>
-	<div id="topbackground">
+	<div id="topbackgroundOr2">
 
 		<!-- 上方圖片 -->
 		<div class="container">
@@ -100,54 +100,55 @@
 	</div>
 
 	<!-- 訂位明細 -->
-	<div class="container">
-		<fieldset class="order">
-			<legend><label class="control-label ">訂位明細</label></legend>
-			  
-			  <table class="rwd-table">
-                    <tr>
-                        <th>日期</th>
-				        <th>車次</th>
-				        <th>出發時間</th>
-				        <th>到達時間</th>
-				        <th>起程站</th>
-				        <th>到達站</th>
-				        <th>全票</th>
-                    </tr>
-                    <tr>
-                        <td data-th="日期">2017/07/28</td>
-                        <td data-th="車次">1110</td>
-                        <td data-th="出發時間">12:10</td>
-                        <td data-th="到達時間">14:50</td>
-                        <td data-th="起程站">台中</td>
-                        <td data-th="到達站">台北</td>
-                        <td data-th="全票">3張</td>
-                    </tr>
-                </table>
-			
-			<div class="captcha">
-				<div class="captcha-part">
-					<input type="text" class="form-control" placeholder="請輸入驗證碼" />
+	<div id="order-2">
+		<div class="container">
+			<fieldset class="order">
+				<legend><label class="control-label ">訂位明細</label></legend>
+				  
+				  <table class="rwd-table">
+	                    <tr>
+	                        <th>日期</th>
+					        <th>車次</th>
+					        <th>出發時間</th>
+					        <th>到達時間</th>
+					        <th>起程站</th>
+					        <th>到達站</th>
+					        <th>全票</th>
+	                    </tr>
+	                    <tr>
+	                        <td data-th="日期">2017/07/28</td>
+	                        <td data-th="車次">1110</td>
+	                        <td data-th="出發時間">12:10</td>
+	                        <td data-th="到達時間">14:50</td>
+	                        <td data-th="起程站">台中</td>
+	                        <td data-th="到達站">台北</td>
+	                        <td data-th="全票">3張</td>
+	                    </tr>
+	                </table>
+				
+				<div class="captcha">
+					<div class="captcha-part">
+						<input type="text" class="form-control" placeholder="請輸入驗證碼" />
+					</div>
+					<div class="captcha-part">
+						<img src="image/CAPTCHA.PNG">
+					</div>
 				</div>
-				<div class="captcha-part">
-					<img src="image/CAPTCHA.PNG">
-				</div>
-			</div>
-			
+				
 
-			<div class="submit">
-				<div class="left">
-					<a href="order-1.html"><button type="button" class="btn btn-warning btn-lg">上一步</button></a>
+				<div class="submit">
+					<div class="left">
+						<a href="order-1.html"><button type="button" class="btn btn-warning btn-lg">上一步</button></a>
+					</div>
+					<div class="right">
+						<a href="order-3.html"><button type="button" class="btn btn-warning btn-lg">完成訂位</button></a>
+					</div>
 				</div>
-				<div class="right">
-					<a href="order-3.html"><button type="button" class="btn btn-warning btn-lg">完成訂位</button></a>
-				</div>
-			</div>
 
 
-		</fieldset>
+			</fieldset>
+		</div>
 	</div>
-	
 	
 	<!-- pagefooter -->
 
