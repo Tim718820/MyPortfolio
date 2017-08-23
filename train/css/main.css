@@ -1556,10 +1556,10 @@ body {
 
 /* line 1182, ../sass/main.scss */
 #topbackgroundSh1 {
-  background: -webkit-linear-gradient(#F2DFF7, #FFFFFF);
-  background: -o-linear-gradient(#F2DFF7, #FFFFFF);
-  background: -moz-linear-gradient(#F2DFF7, #FFFFFF);
-  background: linear-gradient(#f2dff7, #ffffff);
+  background: -webkit-linear-gradient(#CECCFD, #FFFFFF);
+  background: -o-linear-gradient(#CECCFD, #FFFFFF);
+  background: -moz-linear-gradient(#CECCFD, #FFFFFF);
+  background: linear-gradient(#ceccfd, #ffffff);
 }
 
 /* line 1190, ../sass/main.scss */
@@ -2047,7 +2047,7 @@ body {
 /* line 1547, ../sass/main.scss */
 #search-2 .rwd-table tr td {
   color: #4A4949;
-  font-size: 13px;
+  font-size: 15px;
   padding: 5px;
   border: 1px solid #DDDDDD;
   display: block;
@@ -2173,46 +2173,123 @@ body {
   }
 }
 /* line 1647, ../sass/main.scss */
+#topbackgroundList {
+  background: -webkit-linear-gradient(#C1FFD0, #FFFFFF);
+  background: -o-linear-gradient(#C1FFD0, #FFFFFF);
+  background: -moz-linear-gradient(#C1FFD0, #FFFFFF);
+  background: linear-gradient(#c1ffd0, #ffffff);
+}
+
+/* line 1655, ../sass/main.scss */
+#stationList input {
+  margin-bottom: 15px;
+}
+/* line 1658, ../sass/main.scss */
+#stationList .rwd-table {
+  overflow: hidden;
+  background: #fff;
+  min-width: 100%;
+  margin-bottom: 100px;
+}
+/* line 1664, ../sass/main.scss */
+#stationList .rwd-table tr:nth-of-type(2n+1) {
+  background: #eee;
+}
+/* line 1667, ../sass/main.scss */
+#stationList .rwd-table tr th {
+  background-color: #595D9D;
+  display: none;
+  margin: 5px;
+  text-align: left;
+  color: #c13904;
+  font-weight: bold;
+}
+@media screen and (min-width: 580px) {
+  /* line 1667, ../sass/main.scss */
+  #stationList .rwd-table tr th {
+    display: table-cell;
+    padding: 1em;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+}
+/* line 1680, ../sass/main.scss */
+#stationList .rwd-table tr th:nth-of-type(2n) {
+  background: #019C9E;
+}
+/* line 1684, ../sass/main.scss */
+#stationList .rwd-table tr td {
+  color: #4A4949;
+  font-size: 15px;
+  padding: 5px;
+  border: 1px solid #DDDDDD;
+  display: block;
+  margin: 5px;
+  text-align: left;
+}
+@media screen and (min-width: 580px) {
+  /* line 1684, ../sass/main.scss */
+  #stationList .rwd-table tr td {
+    display: table-cell;
+    padding: 1em;
+  }
+}
+/* line 1696, ../sass/main.scss */
+#stationList .rwd-table tr td::before {
+  content: attr(data-th) " : ";
+  margin-right: 5px;
+  display: inline-block;
+  color: #c13904;
+  font-weight: bold;
+}
+@media screen and (min-width: 580px) {
+  /* line 1696, ../sass/main.scss */
+  #stationList .rwd-table tr td::before {
+    display: none;
+  }
+}
+
+/* line 1712, ../sass/main.scss */
 footer {
   margin-bottom: -180px;
 }
 @media screen and (max-width: 1549px) and (min-width: 1200px) {
-  /* line 1647, ../sass/main.scss */
+  /* line 1712, ../sass/main.scss */
   footer {
     margin-bottom: -150px;
   }
 }
 @media screen and (max-width: 1199px) and (min-width: 1020px) {
-  /* line 1647, ../sass/main.scss */
+  /* line 1712, ../sass/main.scss */
   footer {
     margin-bottom: -130px;
   }
 }
 @media screen and (max-width: 1019px) and (min-width: 700px) {
-  /* line 1647, ../sass/main.scss */
+  /* line 1712, ../sass/main.scss */
   footer {
     margin-bottom: -110px;
   }
 }
 @media screen and (max-width: 699px) and (min-width: 566px) {
-  /* line 1647, ../sass/main.scss */
+  /* line 1712, ../sass/main.scss */
   footer {
     margin-bottom: -90px;
   }
 }
 @media screen and (max-width: 565px) and (min-width: 447px) {
-  /* line 1647, ../sass/main.scss */
+  /* line 1712, ../sass/main.scss */
   footer {
     margin-bottom: -70px;
   }
 }
 @media screen and (max-width: 446px) and (min-width: 0px) {
-  /* line 1647, ../sass/main.scss */
+  /* line 1712, ../sass/main.scss */
   footer {
     margin-bottom: -50px;
   }
 }
-/* line 1669, ../sass/main.scss */
+/* line 1734, ../sass/main.scss */
 footer .up {
   border-radius: 10px 10px 0 0;
   padding: 30px 50px;
@@ -2220,11 +2297,11 @@ footer .up {
   background-color: #1e1e1e;
   margin-bottom: 0px;
 }
-/* line 1676, ../sass/main.scss */
+/* line 1741, ../sass/main.scss */
 footer .up .name {
   text-indent: 4em;
 }
-/* line 1680, ../sass/main.scss */
+/* line 1745, ../sass/main.scss */
 footer .down {
   background-color: #121212;
   padding: 30px 50px;
@@ -2233,7 +2310,7 @@ footer .down {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 1688, ../sass/main.scss */
+/* line 1753, ../sass/main.scss */
 #fbackground {
   width: 100%;
   height: 100%;

@@ -1180,10 +1180,10 @@ body {
 }
 
 #topbackgroundSh1{
-    background: -webkit-linear-gradient(#F2DFF7,#FFFFFF);
-    background: -o-linear-gradient(#F2DFF7,#FFFFFF);
-    background: -moz-linear-gradient(#F2DFF7,#FFFFFF);
-    background: linear-gradient(#F2DFF7,#FFFFFF);
+    background: -webkit-linear-gradient(#CECCFD,#FFFFFF);
+    background: -o-linear-gradient(#CECCFD,#FFFFFF);
+    background: -moz-linear-gradient(#CECCFD,#FFFFFF);
+    background: linear-gradient(#CECCFD,#FFFFFF);
 }
 //search-1
 #search-1{
@@ -1546,7 +1546,7 @@ body {
             }
             td {
                 color: #4A4949;
-                font-size: 13px;
+                font-size: 15px;
                 padding: 5px;
                 border:1px solid #DDDDDD; 
                 display: block;
@@ -1642,6 +1642,71 @@ body {
         }
         
    }
+}
+
+#topbackgroundList{
+    background: -webkit-linear-gradient(#C1FFD0,#FFFFFF);
+    background: -o-linear-gradient(#C1FFD0,#FFFFFF);
+    background: -moz-linear-gradient(#C1FFD0,#FFFFFF);
+    background: linear-gradient(#C1FFD0,#FFFFFF);
+}
+//stationList
+#stationList{
+    input{
+        margin-bottom: 15px;
+    }
+    .rwd-table {
+        overflow: hidden;
+        background: #fff;
+        min-width: 100%;
+        margin-bottom: 100px;
+        tr{
+            &:nth-of-type(2n+1) { 
+                background: #eee;
+            }
+            th {
+                background-color: #595D9D;
+                display: none;
+                margin: 5px;
+                text-align: left;
+                color: #c13904;
+                font-weight: bold;
+                @include range-width(580px){
+                    display: table-cell;
+                    padding: 1em ;
+                    color: #fff;
+                    border: 1px solid #fff;
+                } 
+                &:nth-of-type(2n) { 
+                    background: #019C9E;
+                }           
+            }
+            td {
+                color: #4A4949;
+                font-size: 15px;
+                padding: 5px;
+                border:1px solid #DDDDDD; 
+                display: block;
+                margin: 5px;
+                text-align: left;
+                @include range-width(580px){
+                    display: table-cell;
+                    padding: 1em ;
+                } 
+                &::before {
+                    content: attr(data-th) " : ";
+                    margin-right: 5px; 
+                    display: inline-block;
+                    color: #c13904;
+                    font-weight: bold;
+                    @include range-width(580px){
+                        display: none;
+                    } 
+                }
+            }
+
+        }
+    }
 }
 //footer
 footer{
