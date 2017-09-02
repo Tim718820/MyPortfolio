@@ -1,5 +1,14 @@
 $(document).ready(function(){
+     //camera 
+    $('#camera_wrap').camera({
+        height: '30%',
+        playPause: false,
+        pagination: true,
+        thumbnails:false
+    });
 
+    $('#camera_wrap').css({"marginBottom":"5px"})
+    $('#camera_wrap').css({"marginTop":"5px"})
 	//往上按鈕
 	$("#up").fadeOut(0);
     $(window).scroll(function(){
@@ -43,22 +52,6 @@ $(document).ready(function(){
         $("#step4").prop("checked",true);
         $("#step3").removeAttr('checked'); ; 
     });
-
-    //camera 
-    $('#camera_wrap').camera({
-        height: '30%',
-        playPause: false,
-        pagination: true,
-        thumbnails:false
-    
-
-    });
-
-    $('#camera_wrap').css({"marginBottom":"5px"})
-    $('#camera_wrap').css({"marginTop":"5px"})
-
-
-
 
     //index animal
     $("#timetable").animate({top:"0"},1300)
