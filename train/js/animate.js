@@ -60,18 +60,30 @@ $(document).ready(function(){
 
 
 
+    //index animal
+    $("#timetable").animate({top:"0"},1300)
+    if($('#timetable').attr('id') == "timetable"){
+        $(window).scroll(function() {
+             if($(window).scrollTop() >= $("#timetable").offset().top){
+                $("#news").animate({"opacity":"1"},1000)
+                $("#news .center").animate({"left":"0"},1000)
+                $("#news .content").animate({"opacity":"1"},2000)
+             } 
+        })
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+   //stationList
+   $("#stationList input").animate({top:"0"},1000)
+   $("#stationList .rwd-table").animate({top:"0"},1500)
+   //serch-2
+   $("#search-2 .rwd-table").animate({top:"0"},800)
+   //refund-1
+   $("#refund-1").animate({"opacity":"1"},2000)
+   //moreNews
+   $("#morenews").animate({"opacity":"1"},1000)
+   $("#morenews .center").animate({"left":"0"},1000)
+   //innerNews
+   $("#innernews").animate({"opacity":"1"},1000)
 
 
 

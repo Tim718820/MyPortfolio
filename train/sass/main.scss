@@ -85,6 +85,7 @@ body {
     }
     .navbar-nav li a{
         padding: 15px 20px;
+        font-weight: 900;
 
         &::before{
             content: '';
@@ -106,6 +107,8 @@ body {
     color: rgba(29, 29, 29, 1.0);
 }
 #timetable{
+    position: relative;
+    top:200px;
     .title{
         margin-top: 10px;
         margin-bottom: 20px;
@@ -269,6 +272,7 @@ body {
 }
 
 #news{
+    @include opacity(0);
     .list-inline {
         overflow: hidden;
         width: 100%;
@@ -341,6 +345,8 @@ body {
                 }
 
                 .center{
+                    position: relative;
+                    left: -700px;
                     text-align: center;
                     margin-bottom: 10px;
                     a{
@@ -415,6 +421,7 @@ body {
                 }
                 .content{
                     padding-top: 40px;
+                    @include opacity(0);
                     @include range-width(768px,990px){
                         padding-top: 0px;
                     }
@@ -492,6 +499,30 @@ body {
                     }
                 }
             }
+            .question{
+                padding: 10px;
+
+                &:hover{
+                    background-color: #EAD6F9;
+                    @include border-radius(8px); 
+
+                    @include range-width(0px,450px){
+                        background-color: transparent;
+                    }
+                }
+                a {
+                    color:#454343;
+                    text-decoration: none;
+                    font-size: 15px;
+                    &::before{
+                        content: "»";
+                        position: relative;
+                        top: -1px;
+                        margin-right: 10px; 
+                        color: tomato;
+                    }
+                }
+            }
         }
     }
 }
@@ -546,6 +577,7 @@ body {
 
 //morenews
 #morenews{
+    @include opacity(0);
     h2{
         margin-bottom: 20px;
         padding-left: 15px;
@@ -586,6 +618,8 @@ body {
                 }
 
                 .center{
+                    position: relative;
+                    left: -700px;
                     text-align: center;
                     margin-bottom: 10px;
                     a{
@@ -736,7 +770,8 @@ body {
 
 //innernews
 #innernews{
-    #news{
+    @include opacity(0);
+    .news{
         background-color: #fff; 
         margin-bottom: 100px;
         padding-bottom: 20px;
@@ -1082,6 +1117,7 @@ body {
 }
 //refund-1
 #refund-1{
+    @include opacity(0); 
     .order{
         background-color: rgba( 247, 247, 247, 1.0);
         border: 5px solid rgba( 255, 98, 57, 1.0);
@@ -1135,7 +1171,8 @@ body {
             font-weight: bold;
             @include border-radius(10px);
             @include box-shadow(2px 2px 2px rgba(30%,30%,40%,0.6),4px 4px 6px rgba(30%,30%,40%,0.4),4px 4px 12px rgba(30%,30%,40%,0.4));
-
+            animation:anitable 7s;
+        
             tr{
                 background-color: #eee;
 
@@ -1213,7 +1250,7 @@ body {
                 border-left: none;
             } 
 
-            li{
+            > li{
                 position: relative;
                 margin:40px 0 60px; 
                 @include range-width(0px, 767px){
@@ -1513,6 +1550,8 @@ body {
 //search-2
 #search-2{
     .rwd-table {
+        position: relative;
+        top: 250px;
         overflow: hidden;
         background: #fff;
         min-width: 100%;
@@ -1585,7 +1624,7 @@ body {
    .srollbg{
         position: relative;
         width: 100%;
-        height: 35vh;
+        height: 50vh;
         overflow: hidden;
         .text{
             position: absolute;
@@ -1631,7 +1670,7 @@ body {
             background-repeat: no-repeat;
             background-position: bottom center;
             width: 2370px;
-            height: 35vh;
+            height: 50vh;
             bottom: 0;
             @include animation(rollImage linear 12s infinite);
 
@@ -1653,9 +1692,13 @@ body {
 //stationList
 #stationList{
     input{
+        position: relative;
+        top: 150px;
         margin-bottom: 15px;
     }
     .rwd-table {
+        position: relative;
+        top: 150px;
         overflow: hidden;
         background: #fff;
         min-width: 100%;
@@ -1708,6 +1751,103 @@ body {
         }
     }
 }
+
+#topbackgroundMail{
+    background: -webkit-linear-gradient(#FCE1F2, #FFFFFF);
+    background: -o-linear-gradient(#FCE1F2, #FFFFFF);
+    background: -moz-linear-gradient(#FCE1F2, #FFFFFF);
+    background: linear-gradient(#FCE1F2, #ffffff);
+}
+//Mail
+#mail{
+    .mailbg{
+        position: relative;
+        padding: 30px;
+        margin: 0 auto;
+        max-width: 650px; 
+        margin-bottom: 50px;
+        @include animation(animail .7s);
+        
+        @keyframes animail{
+            0%{right: -500px;opacity:0.1;}
+            10%{right: -450px;opacity:0.1;}
+            20%{right: -400px;opacity:0.1;}
+            30%{right: -350px;opacity:0.1;}
+            40%{right: -300px;opacity:0.2;}
+            50%{right: -250px;opacity:0.5;}
+            60%{right: -200px;opacity:0.6;}
+            70%{right: -150px;opacity:0.7;}
+            80%{right: -100px;opacity:0.8;}
+            90%{right: -50px;opacity:0.9;}
+            100%{}
+        }
+        h3{
+            margin-top: 0px; 
+            font-weight: 700;
+
+            &::before{
+            content: "";
+            display: inline-block;
+            margin-right: 10px;
+            background: url("../image/mail.jpg") no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 40px;
+            height: 30px;
+            }
+
+        }
+        .innerMail{
+            width: 100%;
+            position: relative;
+
+            .mail{
+                position: relative;
+                background-color: #fff;
+                padding: 40px 35px;
+                z-index: 2;
+                border:1px solid #E5E5E5; 
+                @include box-shadow(2px 2px 2px rgba(77, 77, 102, 0.6), 4px 4px 6px rgba(77, 77, 102, 0.4), 4px 4px 12px rgba(77, 77, 102, 0.4));
+
+                .row{
+                    margin-bottom: 30px;
+                    label{
+                        margin:5px; 
+
+                        &::before{
+                            position: relative;
+                            content: "*";
+                            color: red;
+                            top: 4px;
+                            margin-right:10px; 
+                        }
+                    }
+                    textarea{
+                        resize: none;
+                    }
+                }
+                .btnout{
+                    text-align: right;
+                }
+            }
+            .back{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(125deg,#FB3636 1%,#DC49F5 100%);
+                z-index: 1;
+                @include transform(skew(5deg,-5deg));
+            }
+        }
+    }
+}
+
+
+
+
+
 //footer
 footer{
     margin-bottom: -180px;

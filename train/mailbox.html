@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>台鐵神票手</title>
     <link rel="shortcut icon" href="image/logo.png" />  
@@ -16,9 +15,7 @@
 	<script src="js/animate.js"></script>
 </head>
 <body>
-	<div id="topbackgroundList">
-
-
+<div id="topbackgroundMail">
 	<!-- 上方圖片 -->
         <div class="container">
             <div id="camera_wrap">
@@ -80,55 +77,66 @@
 		</nav>
 	</div>
 
-	
+
+	<div id="mail">
+		<div class="container">
+			<div class="mailbg">			
+				<h3>局長信箱</h3>
+				<div class="innerMail">
+					<div class="back"></div>
+					<form class="mail">
+						<div class="row">
+							<div class="col-md-3">
+								<label class="control-label">姓名:</label>
+								</div>
+							<div class="col-md-9">
+								<input type="text" class="form-control" placeholder="請輸入姓名" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<label class="control-label">連絡電話:</label>
+								</div>
+							<div class="col-md-9">
+								<input type="text" class="form-control" placeholder="請輸入連絡電話"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<label class="control-label">E-mail:</label>
+								</div>
+							<div class="col-md-9">
+								<input type="text" class="form-control" placeholder="請輸入信箱"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<label class="control-label">主旨:</label>
+								</div>
+							<div class="col-md-9">
+								<input type="text" class="form-control" placeholder="請輸入主旨"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<label class="control-label">留言:</label>
+								</div>
+							<div class="col-md-9">
+								<textarea class="form-control" rows="5" placeholder="請輸入留言內容"></textarea>
+							</div>
+						</div>
+						<div class="btnout">
+							<button class="btn btn-success">送出</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-	<!-- 車次查詢表格 -->
-    <div id="stationList">
-    	<div class="container">
-    		<input type="text" class="form-control" placeholder="查詢資料" />
-    		<table class="rwd-table">
-                <tr>
-                    <th>地點</th>
-                    <th>編號</th>
-                    <th>電話</th>
-                    <th>地址</th>
-                </tr>
-                <tr>
-                    <td data-th="地點">台北</td>
-                    <td data-th="編號">100</td>
-                    <td data-th="電話">02-23713558、02-23111024</td>
-                    <td data-th="地址">臺北市中正區黎明里北平西路3號</td>
-                </tr>
-                <tr>
-                    <td data-th="地點">萬華</td>
-                    <td data-th="編號">101</td>
-                    <td data-th="電話">02-23020481</td>
-                    <td data-th="地址">臺北市萬華區富福里康定路382號</td>
-                </tr>
-                <tr>
-                    <td data-th="地點">板橋</td>
-                    <td data-th="編號">102</td>
-                    <td data-th="電話">02-89691036</td>
-                    <td data-th="地址">新北市板橋區縣民大道2段7號</td>
-                </tr>
-                <tr>
-                    <td data-th="地點">樹林</td>
-                    <td data-th="編號">103</td>
-                    <td data-th="電話">02-26812052</td>
-                    <td data-th="地址">新北市樹林區樹北里鎮前街112號</td>
-                </tr>
-                <tr>
-                    <td data-th="地點">山佳</td>
-                    <td data-th="編號">104</td>
-                    <td data-th="電話">02-26808874</td>
-                    <td data-th="地址">新北市樹林區中山里中山路3段108號</td>
-                </tr>
-                
-            </table>
-    		
-    	</div>
-    </div>
+
+
 
 
 	<!-- pagefooter -->
@@ -154,10 +162,6 @@
 </div>
 
 
-
-
-
-</div>
 	
 </body>
 </html>
