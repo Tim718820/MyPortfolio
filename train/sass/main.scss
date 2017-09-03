@@ -396,10 +396,12 @@ body {
                             opacity: 1;
 
                             @include range-width(450px,620px){
-                                width: 200px; 
+                                width: 200px;
+                                height: 150px;
                             }
                             @include range-width(0px,450px){
-                                width: 120px; 
+                                width: 150px;
+                                height: 120px;
                             }
                         }
                         img{
@@ -421,7 +423,6 @@ body {
                 }
                 .content{
                     padding-top: 40px;
-                    @include opacity(0);
                     @include range-width(768px,990px){
                         padding-top: 0px;
                     }
@@ -1735,6 +1736,7 @@ body {
                 display: block;
                 margin: 5px;
                 text-align: left;
+                cursor: pointer;
                 @include range-width(580px){
                     display: table-cell;
                     padding: 1em ;
@@ -1847,9 +1849,187 @@ body {
     }
 }
 
+#topbackgroundStat{
+    background: -webkit-linear-gradient(#D6E5F8, #FFFFFF);
+    background: -o-linear-gradient(#D6E5F8, #FFFFFF);
+    background: -moz-linear-gradient(#D6E5F8, #FFFFFF);
+    background: linear-gradient(#D6E5F8, #ffffff);
+}
+//station_train
+#station_train{
+    .topdata{
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #fff;
+        border-top: 3px solid red;
+        @include border-radius(5px);
+        @include box-shadow(0 1px 2px 0 rgba(34,36,38,.15));
 
+        h3{
+            margin-top:0;
+            margin-bottom:40px; 
+            font-size: 25px;
+            font-weight: 900;
+            font-family: Lato;
+        }
+        p{
+            color:#666666;
+            margin-bottom:15px; 
+        }
+        .phone{
+            margin-bottom: 5px;
+            > div{
+                display: inline-block;
+                background-color: #F2711C;
+                padding: 2px 8px;
+                font-size: 14px;
+                color: #fff;
+                font-weight: 700;
+                @include border-radius(3px);
+            }
+            > span {
+                display: inline-block;
+                margin-left: 10px;
+                line-height: 23px;
+            }
+        }
+        .address{
+            > div{
+                display: inline-block;
+                background-color: #21BA45;
+                padding: 2px 8px;
+                font-size: 14px;
+                color: #fff;
+                font-weight: 700;
+                @include border-radius(3px);
+            }
+            > span {
+                display: inline-block;
+                margin-left: 10px;
+                line-height: 23px;
+            }
+        }
+    }
+    .destination{
+        margin-bottom: 30px;
+        width: 100%;
+        background-color: #E0E1E2;
+        @include border-radius(5px);
+        @include clearfix();
+        > *{
+            display: inline-block;
+            float: left;
+            width: 50%;
+            padding: 10px;
+            background-color: #E0E1E2;
+            text-align: center;
+            font-weight: 900;
+            @include border-radius(5px);
 
+            &:hover{
+                background-color: #AFA9A9;
+            }
+        }
 
+    }
+    .rwd-table {
+        background: #fff;
+        min-width: 100%;
+        margin-bottom: 100px;
+        border-collapse:collapse;
+        tr{
+            border: 1px solid #E4E4E5;
+            th {
+                background-color: #F2F2F3;
+                display: none;
+                margin: 5px;
+                text-align: left;
+                color: #000;
+                font-weight: bold;
+
+                @include range-width(580px){
+                    display: table-cell;
+                    padding: 1em;
+                    color: #000;
+                    text-align: center;
+
+                    &:first-child{
+                        text-align: left;
+                    }
+                }     
+            }
+            td {
+                border: 1px solid #DDDDDD;
+                color: #4A4949;
+                font-size: 15px;
+                display: block;
+                margin: 5px;
+                text-align: left;  
+                padding: 7px;
+                @include range-width(580px){
+                    display: table-cell;
+                    padding: 30px 15px;
+                    text-align: center;
+                    border: none;
+
+                    &:first-child{
+                        padding: 15px;
+                        text-align: left;
+                    }
+                    
+                } 
+                &::before {
+                    content: attr(data-th) " : ";
+                    margin-right: 5px; 
+                    display: inline-block;
+                    color: #66308E;
+                    font-weight: bold;
+                    @include range-width(580px){
+                        display: none;
+                    } 
+                }
+                h3{
+                    display: inline-block;
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                    font-weight: 900;
+                    font-size: 19px;
+                    @include range-width(580px){
+                        display: block;
+                    }
+                }
+                .Trips{
+                    display: inline-block;
+                    font-size: 15px;
+                    color:#666666;
+                    margin-left: 10px;
+                    @include range-width(580px){
+                        display: block;
+                        margin-left: 0px;
+                    }
+                }
+                .glyphicon{
+                    line-height: 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.mountain{
+    border:2px solid #21BA45;
+    color:#21BA45;
+    font-weight: 900;
+    padding: 0px 5px;
+    @include border-radius(35px);
+}
+.sea{
+    border:2px solid #2185D0;
+    color:#2185D0;
+    font-weight: 900;
+    padding: 0px 5px;
+    @include border-radius(35px);
+}
 
 //footer
 footer{

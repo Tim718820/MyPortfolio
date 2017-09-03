@@ -9,6 +9,20 @@ $(document).ready(function(){
 
     $('#camera_wrap').css({"marginBottom":"5px"})
     $('#camera_wrap').css({"marginTop":"5px"})
+
+     //stationList
+    $("#stationList input").animate({top:"0"},1000)
+    $("#stationList .rwd-table").animate({top:"0"},1500)
+    //serch-2
+    $("#search-2 .rwd-table").animate({top:"0"},800)
+    //refund-1
+    $("#refund-1").animate({"opacity":"1"},2000)
+    //moreNews
+    $("#morenews").animate({"opacity":"1"},1000)
+    $("#morenews .center").animate({"left":"0"},1000)
+    //innerNews
+    $("#innernews").animate({"opacity":"1"},1000)
+
 	//往上按鈕
 	$("#up").fadeOut(0);
     $(window).scroll(function(){
@@ -59,32 +73,43 @@ $(document).ready(function(){
         $(window).scroll(function() {
              if($(window).scrollTop() >= $("#timetable").offset().top){
                 $("#news").animate({"opacity":"1"},1000)
-                $("#news .center").animate({"left":"0"},1000)
-                $("#news .content").animate({"opacity":"1"},2000)
+                $("#news .center").animate({"left":"0"},1300)
              } 
         })
     }
 
-   //stationList
-   $("#stationList input").animate({top:"0"},1000)
-   $("#stationList .rwd-table").animate({top:"0"},1500)
-   //serch-2
-   $("#search-2 .rwd-table").animate({top:"0"},800)
-   //refund-1
-   $("#refund-1").animate({"opacity":"1"},2000)
-   //moreNews
-   $("#morenews").animate({"opacity":"1"},1000)
-   $("#morenews .center").animate({"left":"0"},1000)
-   //innerNews
-   $("#innernews").animate({"opacity":"1"},1000)
 
 
-
-
-
-
-
-
+    //station-train
+    $(".trainName").each(function(){
+        if($(this).text() == "自強"){
+            $(this).css({"color":"#DB2828"})
+        }
+        else if($(this).text() == "莒光"){
+            $(this).css({"color":"#F2711C"})
+        }
+        else if($(this).text() == "太魯閣"){
+            $(this).css({"color":"#2185D0"})
+        }
+        else if($(this).text() == "普悠瑪"){
+            $(this).css({"color":"#E039A3"})
+        }
+        else{
+            $(this).css({"color":"black"})
+        }
+    });
+    
+    $(".alongType").each(function(){
+        if($(this).text() == "山線"){
+            $(this).addClass("mountain")
+        }
+        else if($(this).text() == "海線"){
+            $(this).addClass("sea")
+        }
+        else{
+            $(this).css({"color":"transparent"})
+        }
+    });
 
 
 });

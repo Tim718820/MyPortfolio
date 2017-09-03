@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>台鐵神票手</title>
     <link rel="shortcut icon" href="image/logo.png" />  
@@ -16,9 +15,7 @@
 	<script src="js/animate.js"></script>
 </head>
 <body>
-	<div id="topbackgroundList">
-
-
+<div id="topbackgroundStat">
 	<!-- 上方圖片 -->
         <div class="container">
             <div id="camera_wrap">
@@ -70,8 +67,8 @@
 		        <li><a href="search-1.html">查詢系統</a></li>
 		        <li><a href="refund-1.html">取消訂票</a></li>
 		        <li><a href="stationList.html">車站清單</a></li>
-                <li><a href="more.html">最新消息</a></li>
-                <li><a href="mailbox.html">局長信箱</a></li>
+		        <li><a href="more.html">最新消息</a></li>
+		        <li><a href="mailbox.html">局長信箱</a></li>
 		        
 		      </ul>
 		    </div>
@@ -79,55 +76,88 @@
 		</nav>
 	</div>
 
-	
+
+	<div id="station_train">
+		<div class="container">
+			<div class="topdata">
+				<h3>臺北站</h3>
+				<p>2017年09月03日 (星期日)</p>
+				<div class="phone">
+					<div>電話</div>
+					<span>02-23713558、02-23111024</span>
+				</div>
+				<div class="address">
+					<div>地址</div>
+					<span>臺北市中正區黎明里北平西路3號</span>
+				</div>
+			</div>
+			<div class="destination">
+				<div class="left">順向</div>
+				<div class="right">逆向</div>
+			</div>
+
+			<table class="rwd-table">
+				<thead>
+					<tr>
+						<th>詳細資料</th>
+						<th>經由</th>
+						<th>開車時間</th>
+						<th>誤點</th>
+						<th></th>
+						<th>終點站</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-th="詳細資料"><h3 class="trainName">區間車</h3><div class="Trips">2356</div></td>
+						<td data-th="經由"><span class="alongType">山線</span></td>
+						<td data-th="開車時間">11:05</td>
+						<td data-th="誤點">準時</td>
+						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+						<td data-th="終點站">苗栗</td>
+					</tr>
+					<tr>
+						<td data-th="詳細資料"><h3 class="trainName">自強</h3><div class="Trips">1189</div></td>
+						<td data-th="經由"><span class="alongType"></span></td>
+						<td data-th="開車時間">03:25</td>
+						<td data-th="誤點">晚1分</td>
+						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+						<td data-th="終點站">七堵</td>
+					</tr>
+					<tr>
+						<td data-th="詳細資料"><h3 class="trainName">莒光</h3><div class="Trips">4786</div></td>
+						<td data-th="經由"><span class="alongType">海線</span></td>
+						<td data-th="開車時間">07:29</td>
+						<td data-th="誤點">準時</td>
+						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+						<td data-th="終點站">宜蘭</td>
+					</tr>
+					<tr>
+						<td data-th="詳細資料"><h3 class="trainName">普悠瑪</h3><div class="Trips">1317</div></td>
+						<td data-th="經由"><span class="alongType">海線</span></td>
+						<td data-th="開車時間">05:56</td>
+						<td data-th="誤點">準時</td>
+						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+						<td data-th="終點站">台南</td>
+					</tr>
+					<tr>
+						<td data-th="詳細資料"><h3 class="trainName">太魯閣</h3><div class="Trips">2765</div></td>
+						<td data-th="經由"><span class="alongType">山線</span></td>
+						<td data-th="開車時間">20:34</td>
+						<td data-th="誤點">晚3分</td>
+						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+						<td data-th="終點站">花蓮</td>
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
 
 
-	<!-- 車次查詢表格 -->
-    <div id="stationList">
-    	<div class="container">
-    		<input type="text" class="form-control" placeholder="查詢資料" />
-    		<table class="rwd-table">
-                <tr>
-                    <th>地點</th>
-                    <th>編號</th>
-                    <th>電話</th>
-                    <th>地址</th>
-                </tr>
-                <tr onclick="location.href = 'station_train.html';">
-                    <td data-th="地點">台北</td>
-                    <td data-th="編號">100</td>
-                    <td data-th="電話">02-23713558、02-23111024</td>
-                    <td data-th="地址">臺北市中正區黎明里北平西路3號</td>
-                </tr>
-                <tr>
-                    <td data-th="地點">萬華</td>
-                    <td data-th="編號">101</td>
-                    <td data-th="電話">02-23020481</td>
-                    <td data-th="地址">臺北市萬華區富福里康定路382號</td>
-                </tr>
-                <tr>
-                    <td data-th="地點">板橋</td>
-                    <td data-th="編號">102</td>
-                    <td data-th="電話">02-89691036</td>
-                    <td data-th="地址">新北市板橋區縣民大道2段7號</td>
-                </tr>
-                <tr>
-                    <td data-th="地點">樹林</td>
-                    <td data-th="編號">103</td>
-                    <td data-th="電話">02-26812052</td>
-                    <td data-th="地址">新北市樹林區樹北里鎮前街112號</td>
-                </tr>
-                <tr>
-                    <td data-th="地點">山佳</td>
-                    <td data-th="編號">104</td>
-                    <td data-th="電話">02-26808874</td>
-                    <td data-th="地址">新北市樹林區中山里中山路3段108號</td>
-                </tr>
-                
-            </table>
-    		
-    	</div>
-    </div>
+
+
 
 
 	<!-- pagefooter -->
@@ -153,10 +183,6 @@
 </div>
 
 
-
-
-
-</div>
 	
 </body>
 </html>
