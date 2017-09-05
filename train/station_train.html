@@ -90,6 +90,12 @@
 					<div>地址</div>
 					<span>臺北市中正區黎明里北平西路3號</span>
 				</div>
+				<div class="switch">
+					<input type="checkbox" id="switch">
+					<label for="switch"></label>
+				</div>
+				<p class="hidestation">隱藏已離站列車</p>
+
 			</div>
 			<div class="destination">
 				<div class="left">順向</div>
@@ -105,7 +111,6 @@
 						<th>誤點</th>
 						<th></th>
 						<th>終點站</th>
-
 					</tr>
 				</thead>
 				<tbody>
@@ -134,6 +139,22 @@
 						<td data-th="終點站">宜蘭</td>
 					</tr>
 					<tr>
+						<td data-th="詳細資料"><h3 class="trainName">區間車</h3><div class="Trips">2765</div></td>
+						<td data-th="經由"><span class="alongType"></span></td>
+						<td data-th="開車時間">09:30</td>
+						<td data-th="誤點">晚3分</td>
+						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+						<td data-th="終點站">雲林</td>
+					</tr>
+					<tr>
+						<td data-th="詳細資料"><h3 class="trainName">區間車</h3><div class="Trips">2765</div></td>
+						<td data-th="經由"><span class="alongType">山線</span></td>
+						<td data-th="開車時間">09:30</td>
+						<td data-th="誤點">晚3分</td>
+						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+						<td data-th="終點站">嘉義</td>
+					</tr>
+					<tr>
 						<td data-th="詳細資料"><h3 class="trainName">普悠瑪</h3><div class="Trips">1317</div></td>
 						<td data-th="經由"><span class="alongType">海線</span></td>
 						<td data-th="開車時間">05:56</td>
@@ -148,7 +169,6 @@
 						<td data-th="誤點">晚3分</td>
 						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
 						<td data-th="終點站">花蓮</td>
-
 					</tr>
 				</tbody>
 			</table>

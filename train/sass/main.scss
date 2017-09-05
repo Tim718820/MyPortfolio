@@ -346,7 +346,7 @@ body {
 
                 .center{
                     position: relative;
-                    left: -700px;
+                    left: -200px;
                     text-align: center;
                     margin-bottom: 10px;
                     a{
@@ -578,7 +578,6 @@ body {
 
 //morenews
 #morenews{
-    @include opacity(0);
     h2{
         margin-bottom: 20px;
         padding-left: 15px;
@@ -620,7 +619,7 @@ body {
 
                 .center{
                     position: relative;
-                    left: -700px;
+                    left: -200px;
                     text-align: center;
                     margin-bottom: 10px;
                     a{
@@ -960,7 +959,7 @@ body {
         .rwd-table {
             background: #fff;
             overflow: hidden;
-            min-width: 100%;
+            width: 0%;
             margin-bottom: 50px;
             font-weight: bold;
             @include border-radius(10px);
@@ -1069,11 +1068,12 @@ body {
             width: 100%;    
             z-index: 1;  
             img {
+                display: none;
                 width: 100%;
                 @include box-shadow(2px 2px 2px rgba(30%,30%,40%,0.6),4px 4px 6px rgba(30%,30%,40%,0.4),4px 4px 12px rgba(30%,30%,40%,0.4));
             }
             div{   
-                display: block; 
+                display: none; 
                 position: absolute; 
                 text-align: left;   
                 z-index: 1000;    
@@ -1121,7 +1121,6 @@ body {
 }
 //refund-1
 #refund-1{
-    @include opacity(0); 
     .order{
         background-color: rgba( 247, 247, 247, 1.0);
         border: 5px solid rgba( 255, 98, 57, 1.0);
@@ -1133,6 +1132,14 @@ body {
             width:auto;
             padding:0 10px; 
             border-bottom:none;
+        }
+        input{
+            position: relative;
+            right: -70px;
+        }
+        .input{
+            position: relative;
+            left: -100px;
         }
         .rule{
             margin-top: 150px;
@@ -1170,7 +1177,7 @@ body {
         .rwd-table {
             background: #fff;
             overflow: hidden;
-            min-width: 100%;
+            width: 0%;
             margin-bottom: 50px;
             font-weight: bold;
             @include border-radius(10px);
@@ -1708,8 +1715,14 @@ body {
         min-width: 100%;
         margin-bottom: 100px;
         tr{
+            &:hover{
+                background-color: rgba(255,238,122,0.5);
+            }  
             &:nth-of-type(2n+1) { 
                 background: #eee;
+                &:hover{
+                    background-color: rgba(255,238,122,0.5);
+                }  
             }
             th {
                 background-color: #595D9D;
@@ -1858,6 +1871,8 @@ body {
 //station_train
 #station_train{
     .topdata{
+        position: relative;
+        top:100px;
         margin-bottom: 30px;
         padding: 20px;
         background-color: #fff;
@@ -1894,6 +1909,7 @@ body {
             }
         }
         .address{
+            margin-bottom: 15px;
             > div{
                 display: inline-block;
                 background-color: #21BA45;
@@ -1909,8 +1925,61 @@ body {
                 line-height: 23px;
             }
         }
+        .switch{
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 27px;
+            input{
+                display: none;
+                &:checked + label{
+                    background-color:#4285F4;
+                    &::after{
+                         left:30px;
+                    }
+                }
+            }
+            label{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 60px;
+                height: 27px;
+                background-color: rgba(0,0,0,.12);
+                cursor: pointer;
+                @include border-radius(60px);
+                @include box-shadow(inset 0 1px 2px rgba(0,0,0,.1));
+                @include transition(all .2s);
+
+                &:hover{
+                    background-color: rgba(0,0,0,.24)
+                }
+
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: -1.8px;
+                    top:-2.5px;
+                    width: 31px;
+                    height: 31px;
+                    background-color: #fff;
+                    @include border-radius(50%);
+                    @include box-shadow(0 2px 4px rgba(0,0,0,.2), 0 0 0 1px rgba(0,0,0,.04));
+                    @include transition(.2s ease-in);
+
+                }
+            }
+        }
+        .hidestation{
+            display: inline-block;
+            margin-top: 2px;
+            font-weight: 700;
+        }
     }
     .destination{
+        position: relative;
+        top:100px;
         margin-bottom: 30px;
         width: 100%;
         background-color: #E0E1E2;
@@ -1933,12 +2002,17 @@ body {
 
     }
     .rwd-table {
+        position: relative;
+        top:100px;
         background: #fff;
         min-width: 100%;
         margin-bottom: 100px;
         border-collapse:collapse;
         tr{
             border: 1px solid #E4E4E5;
+            &:hover{
+                background-color: rgba(255,238,122,0.5);
+            }  
             th {
                 background-color: #F2F2F3;
                 display: none;
