@@ -14,11 +14,81 @@
 	<script type="text/javascript" src="js/camera/scripts/camera.min.js"></script>
 	<script src="js/public.js"></script>
 	<script src="js/animate.js"></script>
-
-
+	<style>
+	.bg111 {
+		position: fixed;
+    	background-color: #99D9EA;
+    	width: 100%;
+    	height: 100%;
+    	z-index: -3;
+	}
+	#aaa{
+		position: absolute;
+		top: calc(50% - 50px);
+		left:  calc(50% - 50px);
+		width: 100px;
+		height: 100px;
+		background-color: transparent;
+		z-index: 1;
+	}
+	.back111{
+		position: absolute;
+		bottom: calc(50% - 50px);
+		left:  calc(50% - 50px);
+		width: 100px;
+		height: 10px;
+		background-color: blue;
+		z-index: -1;
+		animation: ani 2.2s infinite;
+	}
+	@keyframes ani{
+		0%{height: 0px;}
+		5%{height: 5px;}
+        10%{height: 10px;}
+        15%{height: 15px;}
+        20%{height: 20px;}
+        25%{height: 25px;}
+        30%{height: 30px;}
+        35%{height: 35px;}
+        40%{height: 40px;}
+        45%{height: 45px;}
+        50%{height: 50px;}
+        55%{height: 55px;}
+        60%{height: 60px;}
+        65%{height: 65px;}
+        70%{height: 70px;}
+        75%{height: 75px;}
+        80%{height: 80px;}
+        85%{height: 85px;}
+        90%{height: 90px;}
+        95%{height: 95px;}
+        100%{height: 100px;}
+	}
+	.back222{
+		position: absolute;
+		bottom: calc(50% - 50px);
+		left:  calc(50% - 50px);
+		width: 100px;
+		height: 100px;
+		background-color: #fff;
+		z-index: -2;
+	}
+	</style>
+	<script>
+		$(window).load(function() {
+			$(".bg111").fadeOut("slow");
+		});
+	</script>
 
 </head>
 <body>
+<div class="bg111">
+	<img id="aaa" src="image/logo1.png" alt="">
+	<div class="back111"></div>
+	<div class="back222"></div>
+</div>
+
+<div id="all" style="position: relative;z-index: -55;"> 
 	<a id="up" > <span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 
 <div id="topbackground">
@@ -390,6 +460,6 @@
 
 </div>
 
-
+</div>
 </body>
 </html>
