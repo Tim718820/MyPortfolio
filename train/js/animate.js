@@ -2,6 +2,7 @@ $(document).ready(function(){
      //camera 
     $('#camera_wrap').camera({
         height: '30%',
+        width: '100%',
         playPause: false,
         pagination: true,
         thumbnails:false
