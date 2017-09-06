@@ -1,6 +1,8 @@
 $(window).load(function() {	
 	$(".anibg").fadeOut("slow")
-	$("#all").css({"zIndex":"99"})
+    setTimeout(function(){
+        $("#all").css({"zIndex":"99"})
+    }, 500)
 
 	//index animal
     $("#timetable").animate({top:"0"},1000)
