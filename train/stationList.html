@@ -14,8 +14,21 @@
     <script type="text/javascript" src="js/camera/scripts/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/camera/scripts/camera.min.js"></script>
 	<script src="js/animate.js"></script>
+    <script>
+        $(window).load(function() { 
+            $(".anibg").fadeOut("slow")
+            $("#all").css({"zIndex":"99"})
+        });
+    </script>
 </head>
 <body>
+<div class="anibg">
+    <img src="image/anilogo.png">
+    <div class="backA"></div>
+    <div class="backB"></div>
+</div>
+
+<div id="all">
 	<div id="topbackgroundList">
 
 
@@ -50,107 +63,107 @@
              </div>
         </div>
 	<!-- 導覽列 -->
-	<div class="container">
-		<nav class="navbar navbar-default navbar-static-top">
-		  <div class="container">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                        
-		      </button>
-		      <a class="navbar-brand" href="index.html"> 
-		      	<img id="logo" src="image/logo.png">
-		      	<span>台鐵神票手</span>
-		      </a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="myNavbar">
-		      <ul class="nav navbar-nav">
-		        <li><a href="order-1.html">快速訂票</a></li>
-		        <li><a href="search-1.html">查詢系統</a></li>
-		        <li><a href="refund-1.html">取消訂票</a></li>
-		        <li><a href="stationList.html">車站清單</a></li>
-                <li><a href="more.html">最新消息</a></li>
-                <li><a href="mailbox.html">局長信箱</a></li>
-		        
-		      </ul>
-		    </div>
-		  </div>
-		</nav>
-	</div>
-
-	
-
-
-	<!-- 車次查詢表格 -->
-    <div id="stationList">
     	<div class="container">
-    		<input type="text" class="form-control" placeholder="查詢資料" />
-    		<table class="rwd-table">
-                <tr>
-                    <th>地點</th>
-                    <th>編號</th>
-                    <th>電話</th>
-                    <th>地址</th>
-                </tr>
-                <tr onclick="location.href = 'station_train.html';">
-                    <td data-th="地點">台北</td>
-                    <td data-th="編號">100</td>
-                    <td data-th="電話">02-23713558、02-23111024</td>
-                    <td data-th="地址">臺北市中正區黎明里北平西路3號</td>
-                </tr>
-                <tr>
-                    <td data-th="地點">萬華</td>
-                    <td data-th="編號">101</td>
-                    <td data-th="電話">02-23020481</td>
-                    <td data-th="地址">臺北市萬華區富福里康定路382號</td>
-                </tr>
-                <tr>
-                    <td data-th="地點">板橋</td>
-                    <td data-th="編號">102</td>
-                    <td data-th="電話">02-89691036</td>
-                    <td data-th="地址">新北市板橋區縣民大道2段7號</td>
-                </tr>
-                <tr>
-                    <td data-th="地點">樹林</td>
-                    <td data-th="編號">103</td>
-                    <td data-th="電話">02-26812052</td>
-                    <td data-th="地址">新北市樹林區樹北里鎮前街112號</td>
-                </tr>
-                <tr>
-                    <td data-th="地點">山佳</td>
-                    <td data-th="編號">104</td>
-                    <td data-th="電話">02-26808874</td>
-                    <td data-th="地址">新北市樹林區中山里中山路3段108號</td>
-                </tr>
-                
-            </table>
-    		
+    		<nav class="navbar navbar-default navbar-static-top">
+    		  <div class="container">
+    		    <div class="navbar-header">
+    		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    		        <span class="icon-bar"></span>
+    		        <span class="icon-bar"></span>
+    		        <span class="icon-bar"></span>                        
+    		      </button>
+    		      <a class="navbar-brand" href="index.html"> 
+    		      	<img id="logo" src="image/logo.png">
+    		      	<span>台鐵神票手</span>
+    		      </a>
+    		    </div>
+    		    <div class="collapse navbar-collapse" id="myNavbar">
+    		      <ul class="nav navbar-nav">
+    		        <li><a href="order-1.html">快速訂票</a></li>
+    		        <li><a href="search-1.html">查詢系統</a></li>
+    		        <li><a href="refund-1.html">取消訂票</a></li>
+    		        <li><a href="stationList.html">車站清單</a></li>
+                    <li><a href="more.html">最新消息</a></li>
+                    <li><a href="mailbox.html">局長信箱</a></li>
+    		        
+    		      </ul>
+    		    </div>
+    		  </div>
+    		</nav>
     	</div>
+
+    	
+
+
+    	<!-- 車次查詢表格 -->
+        <div id="stationList">
+        	<div class="container">
+        		<input type="text" class="form-control" placeholder="查詢資料" />
+        		<table class="rwd-table">
+                    <tr>
+                        <th>地點</th>
+                        <th>編號</th>
+                        <th>電話</th>
+                        <th>地址</th>
+                    </tr>
+                    <tr onclick="location.href = 'station_train.html';">
+                        <td data-th="地點">台北</td>
+                        <td data-th="編號">100</td>
+                        <td data-th="電話">02-23713558、02-23111024</td>
+                        <td data-th="地址">臺北市中正區黎明里北平西路3號</td>
+                    </tr>
+                    <tr>
+                        <td data-th="地點">萬華</td>
+                        <td data-th="編號">101</td>
+                        <td data-th="電話">02-23020481</td>
+                        <td data-th="地址">臺北市萬華區富福里康定路382號</td>
+                    </tr>
+                    <tr>
+                        <td data-th="地點">板橋</td>
+                        <td data-th="編號">102</td>
+                        <td data-th="電話">02-89691036</td>
+                        <td data-th="地址">新北市板橋區縣民大道2段7號</td>
+                    </tr>
+                    <tr>
+                        <td data-th="地點">樹林</td>
+                        <td data-th="編號">103</td>
+                        <td data-th="電話">02-26812052</td>
+                        <td data-th="地址">新北市樹林區樹北里鎮前街112號</td>
+                    </tr>
+                    <tr>
+                        <td data-th="地點">山佳</td>
+                        <td data-th="編號">104</td>
+                        <td data-th="電話">02-26808874</td>
+                        <td data-th="地址">新北市樹林區中山里中山路3段108號</td>
+                    </tr>
+                    
+                </table>
+        		
+        	</div>
+        </div>
+
+
+    	<!-- pagefooter -->
+
+    	<div class="container">
+    		<footer>
+    			<div class="up">
+    		 		<p>地址：408台中市南屯區公益路二段51號</p>
+    		 		<p>聯絡電話：0910-959-515</p>
+    		 		<p>組員:</p>
+    		 		<p class="name">張仲威</p>
+    		 		<p class="name">李誠祐</p>
+    		 		<p class="name">Matt Wu</p>
+    		 	</div>
+    		 	<div class="down">
+    				<p>*本網站若有不慎引用您的圖文資料，侵犯到您的著作權，敬請告知將立即刪除，謝謝！*</p>
+    			</div>
+      		</footer>
+    	</div>
+    	<img id="fbackground" src="image/footer.png">
+
+
     </div>
-
-
-	<!-- pagefooter -->
-
-	<div class="container">
-		<footer>
-			<div class="up">
-		 		<p>地址：408台中市南屯區公益路二段51號</p>
-		 		<p>聯絡電話：0910-959-515</p>
-		 		<p>組員:</p>
-		 		<p class="name">張仲威</p>
-		 		<p class="name">李誠祐</p>
-		 		<p class="name">Matt Wu</p>
-		 	</div>
-		 	<div class="down">
-				<p>*本網站若有不慎引用您的圖文資料，侵犯到您的著作權，敬請告知將立即刪除，謝謝！*</p>
-			</div>
-  		</footer>
-	</div>
-	<img id="fbackground" src="image/footer.png">
-
-
-</div>
 
 
 

@@ -13,196 +13,209 @@
     <script type="text/javascript" src="js/camera/scripts/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/camera/scripts/camera.min.js"></script>
 	<script src="js/animate.js"></script>
+	<script>
+		$(window).load(function() {	
+			$(".anibg").fadeOut("slow")
+			$("#all").css({"zIndex":"99"})
+		});
+	</script>
 </head>
 <body>
-<div id="topbackgroundStat">
-	<!-- 上方圖片 -->
-        <div class="container">
-            <div id="camera_wrap">
-                <div data-src="image/banner-train0.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        區間車
-                     </div>
-                </div>
-                 <div data-src="image/banner-train1.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        普悠瑪號
-                     </div>
-                </div>
-                 <div data-src="image/banner-train2.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        自強號
-                     </div>
-                </div>
-                 <div data-src="image/banner-train3.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        太魯閣號
-                     </div>
-                </div>
-                 <div data-src="image/banner-train4.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        莒光號
-                     </div>
-                </div>
-             </div>
-        </div>
-	<!-- 導覽列 -->
-	<div class="container">
-		<nav class="navbar navbar-default navbar-static-top">
-		  <div class="container">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                        
-		      </button>
-		      <a class="navbar-brand" href="index.html"> 
-		      	<img id="logo" src="image/logo.png">
-		      	<span>台鐵神票手</span>
-		      </a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="myNavbar">
-		      <ul class="nav navbar-nav">
-		        <li><a href="order-1.html">快速訂票</a></li>
-		        <li><a href="search-1.html">查詢系統</a></li>
-		        <li><a href="refund-1.html">取消訂票</a></li>
-		        <li><a href="stationList.html">車站清單</a></li>
-		        <li><a href="more.html">最新消息</a></li>
-		        <li><a href="mailbox.html">局長信箱</a></li>
-		        
-		      </ul>
-		    </div>
-		  </div>
-		</nav>
-	</div>
-
-
-	<div id="station_train">
-		<div class="container">
-			<div class="topdata">
-				<h3>臺北站</h3>
-				<p>2017年09月03日 (星期日)</p>
-				<div class="phone">
-					<div>電話</div>
-					<span>02-23713558、02-23111024</span>
-				</div>
-				<div class="address">
-					<div>地址</div>
-					<span>臺北市中正區黎明里北平西路3號</span>
-				</div>
-				<div class="switch">
-					<input type="checkbox" id="switch">
-					<label for="switch"></label>
-				</div>
-				<p class="hidestation">隱藏已離站列車</p>
-
-			</div>
-			<div class="destination">
-				<div class="left">順向</div>
-				<div class="right">逆向</div>
-			</div>
-
-			<table class="rwd-table">
-				<thead>
-					<tr>
-						<th>詳細資料</th>
-						<th>經由</th>
-						<th>開車時間</th>
-						<th>誤點</th>
-						<th></th>
-						<th>終點站</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td data-th="詳細資料"><h3 class="trainName">區間車</h3><div class="Trips">2356</div></td>
-						<td data-th="經由"><span class="alongType">山線</span></td>
-						<td data-th="開車時間">11:05</td>
-						<td data-th="誤點">準時</td>
-						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
-						<td data-th="終點站">苗栗</td>
-					</tr>
-					<tr>
-						<td data-th="詳細資料"><h3 class="trainName">自強</h3><div class="Trips">1189</div></td>
-						<td data-th="經由"><span class="alongType"></span></td>
-						<td data-th="開車時間">03:25</td>
-						<td data-th="誤點">晚1分</td>
-						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
-						<td data-th="終點站">七堵</td>
-					</tr>
-					<tr>
-						<td data-th="詳細資料"><h3 class="trainName">莒光</h3><div class="Trips">4786</div></td>
-						<td data-th="經由"><span class="alongType">海線</span></td>
-						<td data-th="開車時間">07:29</td>
-						<td data-th="誤點">準時</td>
-						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
-						<td data-th="終點站">宜蘭</td>
-					</tr>
-					<tr>
-						<td data-th="詳細資料"><h3 class="trainName">區間車</h3><div class="Trips">2765</div></td>
-						<td data-th="經由"><span class="alongType"></span></td>
-						<td data-th="開車時間">09:30</td>
-						<td data-th="誤點">晚3分</td>
-						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
-						<td data-th="終點站">雲林</td>
-					</tr>
-					<tr>
-						<td data-th="詳細資料"><h3 class="trainName">區間車</h3><div class="Trips">2765</div></td>
-						<td data-th="經由"><span class="alongType">山線</span></td>
-						<td data-th="開車時間">09:30</td>
-						<td data-th="誤點">晚3分</td>
-						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
-						<td data-th="終點站">嘉義</td>
-					</tr>
-					<tr>
-						<td data-th="詳細資料"><h3 class="trainName">普悠瑪</h3><div class="Trips">1317</div></td>
-						<td data-th="經由"><span class="alongType">海線</span></td>
-						<td data-th="開車時間">05:56</td>
-						<td data-th="誤點">準時</td>
-						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
-						<td data-th="終點站">台南</td>
-					</tr>
-					<tr>
-						<td data-th="詳細資料"><h3 class="trainName">太魯閣</h3><div class="Trips">2765</div></td>
-						<td data-th="經由"><span class="alongType">山線</span></td>
-						<td data-th="開車時間">20:34</td>
-						<td data-th="誤點">晚3分</td>
-						<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
-						<td data-th="終點站">花蓮</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-
-
-
-
-
-
-	<!-- pagefooter -->
-
-	<div class="container">
-		<footer>
-			<div class="up">
-		 		<p>地址：408台中市南屯區公益路二段51號</p>
-		 		<p>聯絡電話：0910-959-515</p>
-		 		<p>組員:</p>
-		 		<p class="name">張仲威</p>
-		 		<p class="name">李誠祐</p>
-		 		<p class="name">Matt Wu</p>
-		 	</div>
-		 	<div class="down">
-				<p>*本網站若有不慎引用您的圖文資料，侵犯到您的著作權，敬請告知將立即刪除，謝謝！*</p>
-			</div>
-  		</footer>
-	</div>
-	<img id="fbackground" src="image/footer.png">
-
-
+<div class="anibg">
+	<img src="image/anilogo.png">
+	<div class="backA"></div>
+	<div class="backB"></div>
 </div>
 
+<div id="all">
+	<div id="topbackgroundStat">
+		<!-- 上方圖片 -->
+	        <div class="container">
+	            <div id="camera_wrap">
+	                <div data-src="image/banner-train0.jpg">
+	                    <div class="camera_caption fadeFromBottom">
+	                        區間車
+	                     </div>
+	                </div>
+	                 <div data-src="image/banner-train1.jpg">
+	                    <div class="camera_caption fadeFromBottom">
+	                        普悠瑪號
+	                     </div>
+	                </div>
+	                 <div data-src="image/banner-train2.jpg">
+	                    <div class="camera_caption fadeFromBottom">
+	                        自強號
+	                     </div>
+	                </div>
+	                 <div data-src="image/banner-train3.jpg">
+	                    <div class="camera_caption fadeFromBottom">
+	                        太魯閣號
+	                     </div>
+	                </div>
+	                 <div data-src="image/banner-train4.jpg">
+	                    <div class="camera_caption fadeFromBottom">
+	                        莒光號
+	                     </div>
+	                </div>
+	             </div>
+	        </div>
+		<!-- 導覽列 -->
+		<div class="container">
+			<nav class="navbar navbar-default navbar-static-top">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			      <a class="navbar-brand" href="index.html"> 
+			      	<img id="logo" src="image/logo.png">
+			      	<span>台鐵神票手</span>
+			      </a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav">
+			        <li><a href="order-1.html">快速訂票</a></li>
+			        <li><a href="search-1.html">查詢系統</a></li>
+			        <li><a href="refund-1.html">取消訂票</a></li>
+			        <li><a href="stationList.html">車站清單</a></li>
+			        <li><a href="more.html">最新消息</a></li>
+			        <li><a href="mailbox.html">局長信箱</a></li>
+			        
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</div>
 
+
+		<div id="station_train">
+			<div class="container">
+				<div class="topdata">
+					<h3>臺北站</h3>
+					<p>2017年09月03日 (星期日)</p>
+					<div class="phone">
+						<div>電話</div>
+						<span>02-23713558、02-23111024</span>
+					</div>
+					<div class="address">
+						<div>地址</div>
+						<span>臺北市中正區黎明里北平西路3號</span>
+					</div>
+					<div class="switch">
+						<input type="checkbox" id="switch">
+						<label for="switch"></label>
+					</div>
+					<p class="hidestation">隱藏已離站列車</p>
+
+				</div>
+				<div class="destination">
+					<div class="left">順向</div>
+					<div class="right">逆向</div>
+				</div>
+
+				<table class="rwd-table">
+					<thead>
+						<tr>
+							<th>詳細資料</th>
+							<th>經由</th>
+							<th>開車時間</th>
+							<th>誤點</th>
+							<th></th>
+							<th>終點站</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-th="詳細資料"><h3 class="trainName">區間車</h3><div class="Trips">2356</div></td>
+							<td data-th="經由"><span class="alongType">山線</span></td>
+							<td data-th="開車時間">11:05</td>
+							<td data-th="誤點">準時</td>
+							<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+							<td data-th="終點站">苗栗</td>
+						</tr>
+						<tr>
+							<td data-th="詳細資料"><h3 class="trainName">自強</h3><div class="Trips">1189</div></td>
+							<td data-th="經由"><span class="alongType"></span></td>
+							<td data-th="開車時間">03:25</td>
+							<td data-th="誤點">晚1分</td>
+							<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+							<td data-th="終點站">七堵</td>
+						</tr>
+						<tr>
+							<td data-th="詳細資料"><h3 class="trainName">莒光</h3><div class="Trips">4786</div></td>
+							<td data-th="經由"><span class="alongType">海線</span></td>
+							<td data-th="開車時間">07:29</td>
+							<td data-th="誤點">準時</td>
+							<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+							<td data-th="終點站">宜蘭</td>
+						</tr>
+						<tr>
+							<td data-th="詳細資料"><h3 class="trainName">區間車</h3><div class="Trips">2765</div></td>
+							<td data-th="經由"><span class="alongType"></span></td>
+							<td data-th="開車時間">09:30</td>
+							<td data-th="誤點">晚3分</td>
+							<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+							<td data-th="終點站">雲林</td>
+						</tr>
+						<tr>
+							<td data-th="詳細資料"><h3 class="trainName">區間車</h3><div class="Trips">2765</div></td>
+							<td data-th="經由"><span class="alongType">山線</span></td>
+							<td data-th="開車時間">09:30</td>
+							<td data-th="誤點">晚3分</td>
+							<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+							<td data-th="終點站">嘉義</td>
+						</tr>
+						<tr>
+							<td data-th="詳細資料"><h3 class="trainName">普悠瑪</h3><div class="Trips">1317</div></td>
+							<td data-th="經由"><span class="alongType">海線</span></td>
+							<td data-th="開車時間">05:56</td>
+							<td data-th="誤點">準時</td>
+							<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+							<td data-th="終點站">台南</td>
+						</tr>
+						<tr>
+							<td data-th="詳細資料"><h3 class="trainName">太魯閣</h3><div class="Trips">2765</div></td>
+							<td data-th="經由"><span class="alongType">山線</span></td>
+							<td data-th="開車時間">20:34</td>
+							<td data-th="誤點">晚3分</td>
+							<td data-th="往"><span class="glyphicon glyphicon-arrow-right"></span></td>
+							<td data-th="終點站">花蓮</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+
+
+
+
+		<!-- pagefooter -->
+
+		<div class="container">
+			<footer>
+				<div class="up">
+			 		<p>地址：408台中市南屯區公益路二段51號</p>
+			 		<p>聯絡電話：0910-959-515</p>
+			 		<p>組員:</p>
+			 		<p class="name">張仲威</p>
+			 		<p class="name">李誠祐</p>
+			 		<p class="name">Matt Wu</p>
+			 	</div>
+			 	<div class="down">
+					<p>*本網站若有不慎引用您的圖文資料，侵犯到您的著作權，敬請告知將立即刪除，謝謝！*</p>
+				</div>
+	  		</footer>
+		</div>
+		<img id="fbackground" src="image/footer.png">
+
+
+	</div>
+
+</div>
 	
 </body>
 </html>

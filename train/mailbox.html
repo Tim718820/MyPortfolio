@@ -13,154 +13,167 @@
     <script type="text/javascript" src="js/camera/scripts/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/camera/scripts/camera.min.js"></script>
 	<script src="js/animate.js"></script>
+	<script>
+		$(window).load(function() {
+			$(".anibg").fadeOut("slow")
+			$("#all").css({"zIndex":"99"})
+		});
+	</script>
 </head>
 <body>
-<div id="topbackgroundMail">
-	<!-- 上方圖片 -->
-        <div class="container">
-            <div id="camera_wrap">
-                <div data-src="image/banner-train0.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        區間車
-                     </div>
-                </div>
-                 <div data-src="image/banner-train1.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        普悠瑪號
-                     </div>
-                </div>
-                 <div data-src="image/banner-train2.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        自強號
-                     </div>
-                </div>
-                 <div data-src="image/banner-train3.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        太魯閣號
-                     </div>
-                </div>
-                 <div data-src="image/banner-train4.jpg">
-                    <div class="camera_caption fadeFromBottom">
-                        莒光號
-                     </div>
-                </div>
-             </div>
-        </div>
-	<!-- 導覽列 -->
-	<div class="container">
-		<nav class="navbar navbar-default navbar-static-top">
-		  <div class="container">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                        
-		      </button>
-		      <a class="navbar-brand" href="index.html"> 
-		      	<img id="logo" src="image/logo.png">
-		      	<span>台鐵神票手</span>
-		      </a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="myNavbar">
-		      <ul class="nav navbar-nav">
-		        <li><a href="order-1.html">快速訂票</a></li>
-		        <li><a href="search-1.html">查詢系統</a></li>
-		        <li><a href="refund-1.html">取消訂票</a></li>
-		        <li><a href="stationList.html">車站清單</a></li>
-		        <li><a href="more.html">最新消息</a></li>
-		        <li><a href="mailbox.html">局長信箱</a></li>
-		        
-		      </ul>
-		    </div>
-		  </div>
-		</nav>
-	</div>
+<div class="anibg">
+	<img src="image/anilogo.png">
+	<div class="backA"></div>
+	<div class="backB"></div>
+</div>
 
-
-	<div id="mail">
+<div id="all">
+	<div id="topbackgroundMail">
+		<!-- 上方圖片 -->
+	        <div class="container">
+	            <div id="camera_wrap">
+	                <div data-src="image/banner-train0.jpg">
+	                    <div class="camera_caption fadeFromBottom">
+	                        區間車
+	                     </div>
+	                </div>
+	                 <div data-src="image/banner-train1.jpg">
+	                    <div class="camera_caption fadeFromBottom">
+	                        普悠瑪號
+	                     </div>
+	                </div>
+	                 <div data-src="image/banner-train2.jpg">
+	                    <div class="camera_caption fadeFromBottom">
+	                        自強號
+	                     </div>
+	                </div>
+	                 <div data-src="image/banner-train3.jpg">
+	                    <div class="camera_caption fadeFromBottom">
+	                        太魯閣號
+	                     </div>
+	                </div>
+	                 <div data-src="image/banner-train4.jpg">
+	                    <div class="camera_caption fadeFromBottom">
+	                        莒光號
+	                     </div>
+	                </div>
+	             </div>
+	        </div>
+		<!-- 導覽列 -->
 		<div class="container">
-			<div class="mailbg">			
-				<h3>局長信箱</h3>
-				<div class="innerMail">
-					<div class="back"></div>
-					<form class="mail">
-						<div class="row">
-							<div class="col-md-3">
-								<label class="control-label">姓名:</label>
+			<nav class="navbar navbar-default navbar-static-top">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			      <a class="navbar-brand" href="index.html"> 
+			      	<img id="logo" src="image/logo.png">
+			      	<span>台鐵神票手</span>
+			      </a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav">
+			        <li><a href="order-1.html">快速訂票</a></li>
+			        <li><a href="search-1.html">查詢系統</a></li>
+			        <li><a href="refund-1.html">取消訂票</a></li>
+			        <li><a href="stationList.html">車站清單</a></li>
+			        <li><a href="more.html">最新消息</a></li>
+			        <li><a href="mailbox.html">局長信箱</a></li>
+			        
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</div>
+
+
+		<div id="mail">
+			<div class="container">
+				<div class="mailbg">			
+					<h3>局長信箱</h3>
+					<div class="innerMail">
+						<div class="back"></div>
+						<form class="mail">
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label">姓名:</label>
+									</div>
+								<div class="col-md-9">
+									<input type="text" class="form-control" placeholder="請輸入姓名" />
 								</div>
-							<div class="col-md-9">
-								<input type="text" class="form-control" placeholder="請輸入姓名" />
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<label class="control-label">連絡電話:</label>
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label">連絡電話:</label>
+									</div>
+								<div class="col-md-9">
+									<input type="text" class="form-control" placeholder="請輸入連絡電話"/>
 								</div>
-							<div class="col-md-9">
-								<input type="text" class="form-control" placeholder="請輸入連絡電話"/>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<label class="control-label">E-mail:</label>
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label">E-mail:</label>
+									</div>
+								<div class="col-md-9">
+									<input type="text" class="form-control" placeholder="請輸入信箱"/>
 								</div>
-							<div class="col-md-9">
-								<input type="text" class="form-control" placeholder="請輸入信箱"/>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<label class="control-label">主旨:</label>
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label">主旨:</label>
+									</div>
+								<div class="col-md-9">
+									<input type="text" class="form-control" placeholder="請輸入主旨"/>
 								</div>
-							<div class="col-md-9">
-								<input type="text" class="form-control" placeholder="請輸入主旨"/>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<label class="control-label">留言:</label>
+							<div class="row">
+								<div class="col-md-3">
+									<label class="control-label">留言:</label>
+									</div>
+								<div class="col-md-9">
+									<textarea class="form-control" rows="5" placeholder="請輸入留言內容"></textarea>
 								</div>
-							<div class="col-md-9">
-								<textarea class="form-control" rows="5" placeholder="請輸入留言內容"></textarea>
 							</div>
-						</div>
-						<div class="btnout">
-							<button class="btn btn-success">送出</button>
-						</div>
-					</form>
+							<div class="btnout">
+								<button class="btn btn-success">送出</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
+
+
+
+
+
+
+		<!-- pagefooter -->
+
+		<div class="container">
+			<footer>
+				<div class="up">
+			 		<p>地址：408台中市南屯區公益路二段51號</p>
+			 		<p>聯絡電話：0910-959-515</p>
+			 		<p>組員:</p>
+			 		<p class="name">張仲威</p>
+			 		<p class="name">李誠祐</p>
+			 		<p class="name">Matt Wu</p>
+			 	</div>
+			 	<div class="down">
+					<p>*本網站若有不慎引用您的圖文資料，侵犯到您的著作權，敬請告知將立即刪除，謝謝！*</p>
+				</div>
+	  		</footer>
+		</div>
+		<img id="fbackground" src="image/footer.png">
+
+
 	</div>
-
-
-
-
-
-
-	<!-- pagefooter -->
-
-	<div class="container">
-		<footer>
-			<div class="up">
-		 		<p>地址：408台中市南屯區公益路二段51號</p>
-		 		<p>聯絡電話：0910-959-515</p>
-		 		<p>組員:</p>
-		 		<p class="name">張仲威</p>
-		 		<p class="name">李誠祐</p>
-		 		<p class="name">Matt Wu</p>
-		 	</div>
-		 	<div class="down">
-				<p>*本網站若有不慎引用您的圖文資料，侵犯到您的著作權，敬請告知將立即刪除，謝謝！*</p>
-			</div>
-  		</footer>
-	</div>
-	<img id="fbackground" src="image/footer.png">
-
 
 </div>
-
-
 	
 </body>
 </html>
