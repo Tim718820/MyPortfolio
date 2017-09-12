@@ -30,12 +30,11 @@ $(window).load(function() {
     //moreNews
     $("#morenews .center").animate({"left":"0"},1000)
     //innerNews
-    $("#innernews").animate({"opacity":"1"},1000)
+    $("#innernews").animate({"left":"0"},1200)
     //order-2
-    $("#order-2 .rwd-table").animate({"width":"100%"},800)
+    $("#order-2 .rwd-table").animate({"width":"100%"},1200)
     //order-3
-    $("#order-3 img").fadeIn(1000)
-    $("#order-3 div").delay(500).fadeIn(1000)
+    $("#order-3 .overlay").animate({"top":"0"},1500)
     //station_train
     $("#station_train .topdata").animate({"top":"0"},1000)
     $("#station_train .destination").delay(100).animate({"top":"0"},1000)

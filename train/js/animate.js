@@ -31,7 +31,7 @@ $(document).ready(function(){
     $("#step1").prop("checked",true);
     $("#selectbtn1").click(function() {
         $("#step2").prop("checked",true);
-        $("#step1").removeAttr('checked'); 
+        $("#step1").removeAttr('checked');
     });
 
 
@@ -54,7 +54,6 @@ $(document).ready(function(){
         $("#step4").prop("checked",true);
         $("#step3").removeAttr('checked'); ; 
     });
-
 
     //station-train
     $(".trainName").each(function(){
