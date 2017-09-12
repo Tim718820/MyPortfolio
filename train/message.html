@@ -14,16 +14,17 @@
 	<script type="text/javascript" src="js/camera/scripts/camera.min.js"></script>
 	<script src="js/onload.js"></script>
 	<script src="js/animate.js"></script>
+	<script src="js/starcanvas.js"></script>
 </head>
 <body>
-<div class="anibg">
+	<div class="anibg">
 	<img src="image/anilogo.png">
 	<div class="backA"></div>
 	<div class="backB"></div>
 </div>
 
 <div id="all">
-	<div id="topbackgroundOr3">
+	<div id="topbackgroundmessage">
 
 
 	<!-- 上方圖片 -->
@@ -56,8 +57,6 @@
 		        </div>
    			 </div>
 		</div>
-
-
 	<!-- 導覽列 -->
 		<div class="container">
 			<nav class="navbar navbar-default navbar-static-top">
@@ -78,7 +77,7 @@
 			        <li><a href="order-1.html">快速訂票</a></li>
 			        <li><a href="search-1.html">查詢系統</a></li>
 			        <li><a href="refund-1.html">取消訂票</a></li>
-			        <li><a href="stationList.html">車站清單</a></li>
+			        <li><a href="mailbox.html">局長信箱</a></li>
 			        <li><a href="more.html">最新消息</a></li>
 		        	<li><a href="mailbox.html">局長信箱</a></li>
 			        
@@ -87,58 +86,26 @@
 			  </div>
 			</nav>
 		</div>
-	<!-- 訂票欄 -->
-		<div class="container">
-			<label class="control-label ">您所在的訂位步驟：</label>
-			<div class="progress">
-				<div class="progress-bar" role="progressbar"
-				aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:35%">
-		   		<label class="control-label ">1. 選擇車次 </label>
-		  		</div>
-		  		<div class="progress-bar progress-bar-info" role="progressbar"
-				aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:35%">
-		   		<label class="control-label ">2. 取票資訊  </label>
-		  		</div>
-		  		<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
-				aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-		   		<label class="control-label ">3. 完成訂位  </label>
-		  		</div>
-			</div>
-		</div>
-		<!-- 完成訂位 -->
-		<div id="order-3">
-			<div class="container">
-				<fieldset class="order">
-					<legend><label class="control-label ">完成訂位</label></legend>
 
-
-					<label class="control-label "><h2>恭喜您已完成訂位!!!</h2></label>
-					
-					<div class="overlay">      
-						<img src="image/ticket.jpg">
-						<div><br>
-							 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017.08.08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;台灣鐵路局<br>
-							 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;強&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2557&nbsp;次<br>
-							 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;台&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rarr;台&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北<br>
-							 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15:30開&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17:40到<br>
-							 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;車&nbsp;&nbsp;&nbsp;15&nbsp;&nbsp;&nbsp;號&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cars.&nbsp;5&nbsp;&nbsp;Seat.&nbsp;&nbsp;15<br>
-							 <br>
-							 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NT&nbsp;$&nbsp;300元<br>
-							 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;087465-0284-389&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;限當日當次車有效
-
-						</div>				
-					</div>
-
-					<div class="submit">
-						<a href="index.html"><button type="button" class="btn btn-success btn-lg">
-							返回首頁
-						</button></a>
-					</div>
-				</fieldset>
-			</div>
-		</div>
 		
-		<!-- pagefooter -->
+		<div id="message">
+			<div class="container">
+				<div class="srollbg">
+					<canvas id ="canvas"></canvas>
+					<div class="srollImage"></div>
+					<img src="image/movetrain2.png">
+					<div class="innerText">
+						<p>輸入信息輸入信息輸入信息輸入信息輸入信息輸入信息輸輸入信息輸輸入信息輸輸入信息輸</p>
+						<div>
+						   <a href="mailbox.html"><button type="button" class="btn btn-danger">返回</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
 
 		<div class="container">
 			<footer>
@@ -156,8 +123,7 @@
 	  		</footer>
 		</div>
 		<img id="fbackground" src="image/footer.png">
-
 	</div>
-</div>
+</div>	
 </body>
 </html>

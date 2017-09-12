@@ -1,8 +1,10 @@
 $(window).load(function() {	
-	$(".anibg").fadeOut("slow")
+    setTimeout(function(){
+	   $(".anibg").fadeOut("slow")
+    }, 500)
     setTimeout(function(){
         $("#all").css({"zIndex":"99"})
-    }, 500)
+    }, 700)
 
 	//index animal
     $("#timetable").animate({top:"0"},1000)
@@ -16,6 +18,7 @@ $(window).load(function() {
     }
      //stationList
     $("#stationList input").animate({top:"0"},1000)
+    $("#stationList button").animate({top:"0"},1000)
     $("#stationList .rwd-table").animate({top:"0"},1500)
     //serch-2
     $("#search-2 .rwd-table").animate({top:"0"},800)
@@ -37,5 +40,4 @@ $(window).load(function() {
     $("#station_train .topdata").animate({"top":"0"},1000)
     $("#station_train .destination").delay(100).animate({"top":"0"},1000)
     $("#station_train .rwd-table").delay(200).animate({"top":"0"},1000)
-	
 });

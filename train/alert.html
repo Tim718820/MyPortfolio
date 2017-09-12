@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#test").click(function(){
+				$("#alert-content").animate({"top":"0px"},1000)
+				$("#overlay").fadeIn(800)
+			})
+			$("#overlay,.alert-close,.close").click(function(){
+				$("#alert-content").animate({"top":"-500px"},1000)
+				$("#overlay").fadeOut(800)
+			})
+			
+		})
+	</script>
+</head>
+<body>
+	<div id="alert">
+		<div id="overlay"></div>
+		<div id="alert-content">
+			<div id="alert-title">訊息</div>
+			<div class="close"><a href="#" class="alert-close">x</a></div>
+			<div id="alert-data">
+				<h2>這是我的標題</h2>
+				<p>請選擇車次哦~</p>
+				<p><button class="alert-close">Close</button></p>
+			</div>
+		</div>
+	</div>
+
+	<button id="test">test</button>
+</body>
+</html>
